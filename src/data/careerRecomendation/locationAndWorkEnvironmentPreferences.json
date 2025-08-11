@@ -1,0 +1,24 @@
+{
+    "locationPreferences": [
+        "New York",
+        "San Francisco",
+        "Los Angeles",
+        "Chicago",
+        "Austin",
+        "Seattle",
+        "Remote"
+    ],
+    "workFormat": [
+        "On-Site",
+        "Remote",
+        "Hybrid"
+    ],
+    "workHoursAvailability": [
+        "Full-time (40+ hrs)",
+        "Part-Time",
+        "Flexible Hours",
+        "Freelance/Contract",
+        "Night Shifts",
+        "Weekend Availability"
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "alerts": [
+        {
+            "type": "alert",
+            "title": "Student Missed 5 Classes",
+            "date": "2025-03-10T00:00:00Z",
+            "description": "The student has been absent for 5 consecutive lectures in CRJS 105 – Corrections & Society. Attendance is below the required threshold of 75%."
+        },
+
+        {
+            "type": "accomplishment",
+            "title": "Student Achieved High Distinction",
+            "date": "2025-03-10T00:00:00Z",
+            "description": "The student achieved High Distinction in multiple assessments this term, demonstrating consistent academic excellence across all core subjects."
+        },
+        {
+            "type": "alert",
+            "title": "Upcoming Course Registration",
+            "date": "2025-02-26T05:00:00Z",
+            "description": "The student has not yet initiated registration for the upcoming term. A timely reminder can help secure preferred courses.",
+            "status": "acknowledged",
+            "actionPerformedOn": "2025-02-27T05:00:00Z"
+        },
+        {
+            "type": "alert",
+            "title": "Low Assignment Submission Rate",
+            "date": "2025-02-25T00:00:00Z",
+            "description": "The student has submitted less than 50% of the assignments this term. Consider reaching out to check for support or intervention.",
+            "status": "nudged",
+            "actionPerformedOn": "2025-02-26T05:00:00Z"
+        },
+        {
+            "type": "alert",
+            "title": "Scholarship at Risk",
+            "date": "2025-02-24T11:20:30Z",
+            "description": "Due to recent academic performance, the student is at risk of losing their merit-based scholarship. Prompt advising and planning may help.",
+            "status": "nudged",
+            "actionPerformedOn": "2025-02-25T11:20:30Z"
+        },
+        {
+            "type": "alert",
+            "title": "No Logins in Last 2 Days",
+            "date": "2025-02-23T19:20:30Z",
+            "description": "The student has not logged into the LMS or academic portal for over 2 days. This could indicate disengagement or technical difficulties.",
+            "status": "dismissed",
+            "actionPerformedOn": "2025-02-26T19:20:30Z"
+        },
+        {
+            "type": "alert",
+            "title": "Grade Dropped in Key Course",
+            "date": "2025-02-21T13:45:00Z",
+            "description": "The student’s average grade in Calculus II has dropped by more than 10%. Early academic support is recommended.",
+            "status": "nudged",
+            "actionPerformedOn": "2025-02-23T11:20:30Z"
+        },
+        {
+            "type": "accomplishment",
+            "title": "Active Class Participation",
+            "date": "2025-02-12T10:05:00Z",
+            "description": "Consistently contributed to class discussions and activities, demonstrating engagement and enthusiasm.",
+            "status": "acknowledged",
+            "actionPerformedOn": "2025-02-13T10:05:00Z"
+        },
+        {
+            "type": "accomplishment",
+            "title": "Perfect Midterm Score",
+            "date": "2025-02-09T14:25:30Z",
+            "description": "Achieved a perfect score in the Data Structures midterm exam, showcasing strong understanding of the subject.",
+            "status": "kudosGiven",
+            "actionPerformedOn": "2025-02-11T14:25:30Z"
+        },
+        {
+            "type": "accomplishment",
+            "title": "Peer Recognition",
+            "date": "2025-02-04T15:10:00Z",
+            "description": "Recognized by peers for exceptional collaboration, teamwork, and positive classroom contributions.",
+            "status": "acknowledged",
+            "actionPerformedOn": "2025-02-10T15:10:00Z"
+        },
+        {
+            "type": "accomplishment",
+            "title": "Extra Credit Completed",
+            "date": "2025-01-30T16:30:00Z",
+            "description": "accomplishmentfully completed optional extra credit assignments, demonstrating initiative and commitment to academic excellence.",
+            "status": "kudosGiven",
+            "actionPerformedOn": "2025-01-31T16:30:00Z"
+        },
+        {
+            "type": "accomplishment",
+            "title": "All Assignments On Time",
+            "date": "2025-01-14T18:40:00Z",
+            "description": "Student submitted all assignments before the deadline this term.",
+            "status": "acknowledged",
+            "actionPerformedOn": "2025-01-20T18:40:00Z"
+        },
+        {
+            "type": "accomplishment",
+            "title": "Academic Improvement",
+            "date": "2025-01-08T19:20:30Z",
+            "description": "Student significantly improved their GPA compared to the previous term, reflecting positive academic progress.",
+            "status": "kudosGiven",
+            "actionPerformedOn": "2025-01-11T19:20:30Z"
+        }
+    ]
+}

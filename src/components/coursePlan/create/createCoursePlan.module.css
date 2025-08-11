@@ -1,0 +1,24 @@
+.infinize__createCoursePlan__container {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d8e6ec;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 7px;
+}
+
+.infinize__createCoursePlan__title {
+    font-weight: bold;
+    font-size: 24px;
+    background: #e5f4ff;
+    border-radius: 6px 6px 0px 0px;
+    margin: 0 !important;
+    padding: 16px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.infinize__createCoursePlan__Buttons {
+    width: 160px;
+    height: 48px;
+    text-transform: none !important;
+}

@@ -1,0 +1,65 @@
+.infinize__studentDetails {
+    border-radius: 12px;
+    border: 1px solid #ebf2fd;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.infinize__studentDetails h2 {
+    color: #1c71b5;
+    font-size: 20px;
+    font-weight: 600;
+}
+.infinize__studentDetails h3 {
+    color: #1c71b5;
+    font-size: 18px;
+    font-weight: 500;
+}
+.infinize__studentDetails p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+.infinize__studentDetails h4,
+.infinize__studentDetails span {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.infinize__studentDetailsBR {
+    border-right: 1px solid #ededed;
+}
+/* credits */
+.infinize__credits {
+    /* TODO: Update this class when the tag's CSS is removed. */
+    color: #1c71b5 !important;
+    font-weight: 600 !important;
+}
+.infinize__creditsText {
+    font-size: 10px !important;
+}
+/* student credits color classes */
+.infinize__credits-creditsObtained {
+    fill: #1c71b5;
+    background-color: #1c71b5;
+}
+
+/* student credits color classes */
+.infinize__credits-creditsObtained {
+    fill: #1c71b5;
+    background-color: #1c71b5;
+}
+
+.infinize__credits-creditsEnrolled {
+    fill: #fabf1f;
+    background-color: #fabf1f;
+}
+
+.infinize__credits-remainingCredits {
+    fill: #5cb3f9;
+    background-color: #5cb3f9;
+}

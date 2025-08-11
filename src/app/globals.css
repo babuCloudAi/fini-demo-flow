@@ -1,0 +1,213 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Take up full viewport height */
+}
+
+main {
+    flex-grow: 1; /* Take up remaining space */
+    padding: 32px;
+    margin-top: 64px; /* Ensure content doesn't overlap the AppBar */
+    width: 100%; /* To ensure the Data Grid does not overflow or scroll excessively */
+    overflow-x: auto; /* To ensure the Data Grid does not overflow or scroll excessively */
+}
+
+header {
+    background-color: white !important;
+    color: black !important;
+    padding: 0 0 0 1rem;
+    height: 65px;
+    z-index: 1299 !important;
+    box-shadow: 0px 4px 30px 0px rgba(28, 113, 181, 0.2) !important;
+}
+
+footer {
+    background-color: #1976d2;
+    color: white;
+    padding: 16px;
+    margin-top: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1299; /* Ensure footer is above drawer */
+}
+
+iconify-icon {
+    /* display: inline-block;
+    width: 26px;
+    height: 26px; */
+    /* TODO: Handle the layout shift */
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1c71b5;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e8e8e8;
+}
+
+.infinize__chip {
+    background-color: #d6eaf9 !important;
+    padding: 6px 4px !important;
+    border: none !important;
+    gap: 2px;
+    color: #4a585f !important;
+}
+
+/* input field border color */
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: #d8e6ec !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #d8e6ec !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #d8e6ec !important;
+}
+
+/* Scoped to only Date Range Picker */
+.date-range-picker-wrapper .MuiFormControl-root.MuiPickersTextField-root {
+    width: 100%;
+}
+
+.date-range-picker-wrapper .MuiPickersOutlinedInput-notchedOutline {
+    border-color: #d8e6ec !important;
+}
+
+/* default border */
+.border {
+    border: 1px solid #d8e6ec;
+    border-radius: 4px;
+}
+
+.infinize__recommendationsCard {
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.infinize__recommendationsCardHeading {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background-color: #fff;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+    color: #1c71b5 !important;
+}
+
+.infinize__recommendationsCardText {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.infinize__IconOuter {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #c7e3f9;
+    border: 8px solid #daeefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevents circles from shrinking when the parent card's height and width adjust due to dynamic content or flexbox layout */
+}
+.infinize__IconOuter.smallIcon {
+    border: 3px solid #daeefe;
+    width: 25px;
+    height: 25px;
+}
+
+/* To avoid the default padding of DateField */
+.mui-nby9nv-MuiStack-root {
+    padding: 0 !important;
+}
+
+/* for input label */
+.infinize__inputLabel {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 8px !important;
+}
+
+.infinize__inputLabel_Disabled {
+    color: #d5dadd !important;
+    margin-bottom: 8px !important;
+}
+
+.menu .MuiPaper-root {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 10px;
+    margin-top: -40px;
+    min-width: 200px;
+}
+
+.menuItem {
+    background-color: white !important;
+    font-size: 16px !important;
+    color: #5a6876 !important;
+    padding: 12px 20px !important;
+    display: flex;
+    gap: 15px !important;
+    transition: background-color 0.3s ease-in-out;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.menuItem:hover {
+    background-color: #f0f0f0 !important;
+}
+
+.menuItemIcon {
+    color: #5a6876 !important;
+}
+
+/* Highlight the selected menu item */
+.menuItem.Mui-selected {
+    background: #f0f0f0 !important;
+}
+
+/* delete icon border  */
+.infinize__iconCustomBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid #5a6876;
+    width: fit-content;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.customCheckbox {
+    color: #d1d1d6 !important;
+}
+
+.customCheckbox.Mui-checked {
+    color: #1c71b5 !important;
+}
+
+/* defaul tbutton */
+
+.infinize__button {
+    text-transform: none !important;
+}

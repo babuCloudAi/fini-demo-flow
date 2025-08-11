@@ -1,0 +1,72 @@
+{
+    "pastPositionsInternships": {
+        "positions": [
+            {
+                "positionTitle": "Service Desk Analyst",
+                "company": "TechSolve IT Solutions",
+                "from": "06/01/2024",
+                "to": "12/06/2024",
+                "isCurrentlyWorkHere": false,
+                "keyResponsibilities": "Provided L1 and L2 technical support for over 500 employees. Managed IT service requests through ServiceNow ticketing system, achieving a 98% resolution rate within SLA."
+            }
+        ]
+    },
+    "skills": {
+        "skills": [
+            {
+                "skill": "Analytical & Critical Thinking",
+                "proficiencyLevel": "Advanced"
+            },
+            {
+                "skill": "Report Writing & Documentation",
+                "proficiencyLevel": "Intermediate"
+            },
+            {
+                "skill": "Policy & Procedure Development",
+                "proficiencyLevel": "Beginner"
+            }
+        ]
+    },
+    "certificationsAndLicenses": {
+        "licenses": [
+            {
+                "certificationName": "CompTIA Security+",
+                "company": "CompTIA",
+                "issueDate": "08/10/2024",
+                "expirationDate": "08/09/2027"
+            }
+        ]
+    },
+    "careerGoalsAndInterests": {
+        "desiredIndustries": [
+            "Technology",
+            "Finance",
+            "Healthcare"
+        ],
+        "desiredRoles": [
+            "Forensic Analyst"
+        ],
+        "preferredOrganizationType": [
+            "Large Corporation"
+        ]
+    },
+    "locationAndWorkEnvironmentPreferences": {
+        "workFormat": [
+            "Hybrid"
+        ],
+        "workHoursAvailability": [
+            "Full-time (40+ hrs)"
+        ]
+    },
+    "additionalAndPreferences": {
+        "softSkills": [
+            "Communication",
+            "Collaboration",
+            "Leadership"
+        ],
+        "hobbies": [
+            "Photography",
+            "Volunteering"
+        ]
+    }
+}

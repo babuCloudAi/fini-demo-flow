@@ -1,0 +1,68 @@
+{
+    "title": "Spring 2025",
+    "currentEnrollment": [
+        {
+            "id": 1,
+            "crn": 78901,
+            "subject": "CRJS",
+            "courseNumber": 123,
+            "title": "Introduction to Criminology",
+            "instructor": "John Mathews",
+            "courseCredits": "2",
+            "schedule": "MWF 10:00 AM - 11:30 AM"
+        },
+        {
+            "id": 2,
+            "crn": 78902,
+            "subject": "CRJS",
+            "courseNumber": 125,
+            "title": "The Criminal Justice System",
+            "instructor": "Emily Carter",
+            "courseCredits": "3",
+            "schedule": [
+                "M 10:00 AM - 11:30 AM",
+                "W 10:00 AM - 11:30 AM"
+            ]
+        },
+        {
+            "id": 3,
+            "crn": 78903,
+            "subject": "CRJS",
+            "courseNumber": 105,
+            "title": "Corrections & Society",
+            "instructor": "Mark Robinson",
+            "courseCredits": "3",
+            "schedule": "MWF 10:00 AM - 11:30 AM"
+        },
+        {
+            "id": 4,
+            "crn": 78904,
+            "subject": "CRJS",
+            "courseNumber": 287,
+            "title": "Law Enforcement & Society",
+            "instructor": "Sarah Bennett",
+            "courseCredits": "3",
+            "schedule": "MWF 10:00 AM - 11:30 AM"
+        },
+        {
+            "id": 5,
+            "crn": 78905,
+            "subject": "ENGL",
+            "courseNumber": 342,
+            "title": "English Composition II",
+            "instructor": "William Johnson",
+            "courseCredits": "2",
+            "schedule": "MWF 10:00 AM - 11:30 AM"
+        },
+        {
+            "id": 6,
+            "crn": 78906,
+            "subject": "SOC",
+            "courseNumber": 354,
+            "title": "Introduction to Sociology",
+            "instructor": "Lisa Anderson",
+            "courseCredits": "2",
+            "schedule": "MWF 10:00 AM - 11:30 AM"
+        }
+    ]
+}

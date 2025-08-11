@@ -1,0 +1,28 @@
+{
+    "softSkillsOptions": [
+        "Adaptability",
+        "Communication",
+        "Collaboration",
+        "Creativity",
+        "Leadership",
+        "Problem-Solving",
+        "Teamwork",
+        "Time Management"
+    ],
+    "hobbiesOptions": [
+        "Cooking",
+        "Gaming",
+        "Music",
+        "Painting",
+        "Photography",
+        "Traveling",
+        "Volunteering"
+    ],
+    "teamPreferencesOptions": [
+        "Independent",
+        "Small Team",
+        "Large Team",
+        "Remote Collaboration",
+        "On-Site Teamwork"
+    ]
+}

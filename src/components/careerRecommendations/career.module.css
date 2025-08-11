@@ -1,0 +1,316 @@
+.infinize__careerContainer {
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+    background-color: #fff;
+    border: 1px solid #d8e6ec;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    margin-top: 24px;
+}
+
+.infinize__careerTitle {
+    font-size: 24px !important;
+    background: #e5f4ff;
+    border-radius: 6px 6px 0px 0px;
+    margin: 0;
+    padding: 16px 30px;
+    font-size: 1.5rem;
+    font-weight: 500 !important;
+}
+
+.infinize__jobRecommendationsCards {
+    width: 100%;
+    gap: 20px;
+}
+
+.infinize__jobRecommendationsCard {
+    background-color: #efefef;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.selectedCard {
+    border-left: 4px solid #1c71b5;
+}
+
+.infinize__jobRecommendationsCard h4,
+.infinize__jobRecommendationsEditCard h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.infinize__jobRecommendationsCard p,
+.infinize__jobRecommendationsEditCard p {
+    padding: 10px 0 30px;
+    color: #656565;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 145%;
+}
+
+.infinize__jobRecommendationsSalary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infinize__jobRecommendationsSalary h5 {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.infinize__jobRecommendationsSalary h5 span {
+    padding-left: 5px;
+    color: #656565;
+    font-weight: 400;
+}
+
+.infinize__jobRecommendationsSalary p {
+    padding: 0;
+    color: #656565;
+    font-size: 14px;
+}
+
+.infinize__jobRecommendationsSalary button {
+    font-size: inherit !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+}
+
+.infinize__jobDetails {
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: auto;
+}
+
+.infinize__jobDetailsData {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.infinize__jobDetails img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.infinize__jobDetails h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.infinize__jobDetails p {
+    color: #656565;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 145%;
+}
+
+.infinize__jobDetailsButtonGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infinize__jobDetailsButtonGroup button {
+    font-size: inherit !important;
+    padding: 10px 20px;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.infinize__jobDetailsRoles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infinize__jobDetailsRoles h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.infinize__jobDetailsRolesList {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.infinize__careerRecommendationsContainer {
+    background-color: #fff;
+    border: 1px solid #d8e6ec;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infinize__careerRecommendationsContainerHeading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d8eeff;
+    padding: 10px 20px;
+}
+
+.infinize__careerRecommendationsContainerHeading h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.infinize__careerRecommendationsContainerHeading img {
+    border: 2px solid;
+    border-radius: 8px;
+}
+
+.infinize__careerRecommendationsData {
+    padding: 20px 30px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.infinize__recommendationsCards {
+    padding: 40px 0px 0px;
+}
+
+.infinize__recommendationsCards h5 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.infinize__recommendationsCards ul,
+.infinize__jobDetailsRoles ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+}
+
+.infinize__recommendationsCards li,
+.infinize__jobDetailsRoles li {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #656565;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 !important;
+}
+
+.infinize__recommendationsCards img {
+    width: 40px;
+    height: 40px;
+}
+
+.infinize__jobRecommendationsEditCards {
+    height: 80vh;
+    overflow-y: auto;
+    padding-right: 10px;
+    gap: 16px;
+}
+
+.infinize__jobRecommendationsEditCard {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ebf2fd;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.infinize__jobRecommendationsMenuIcon {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+.infinize__jobRecommendationsEditCard p {
+    padding: 0;
+}
+
+.infinize__jobRecommendationsEditCard button {
+    color: #fff;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    padding: 5px 20px !important;
+}
+
+.infinize__recommendationsCardChartImg {
+    width: 100% !important;
+    height: 60px !important;
+}
+
+.infinize__jobOuttlookStatus {
+    color: #ff9400 !important;
+}
+
+.infinize__jobSavedText,
+.infinize__jobSavingText {
+    font-size: inherit !important;
+    font-weight: 500 !important;
+    color: #1c71b5 !important;
+}
+
+.infinize__jobSavedDetails {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #1c71b5 !important;
+}
+
+.infinize__sectionHeader {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.infinize__dialogContent {
+    border-top: 1px solid #d5d5d5;
+}
+
+.infinize__positionActionContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.infinize__viewRationale {
+    color: #1c71b5;
+    font-family: Poppins;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.48px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-decoration: underline !important;
+    text-transform: none !important;
+}
+.infinize__jobRecommendationsMatches {
+    color: #757575 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}

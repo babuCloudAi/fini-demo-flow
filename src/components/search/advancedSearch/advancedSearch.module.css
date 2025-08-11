@@ -1,0 +1,87 @@
+.infinize__advancedSearch__container {
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #d8e6ec;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+    overflow-x: auto;
+}
+
+.infinize__advancedSearch__titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px;
+}
+.infinize__advancedSearch__title {
+    font-size: 24px !important;
+    color: #1c71b5;
+    margin: 0 !important;
+    font-weight: 500 !important;
+}
+.infinize__advancedSearch__contentPadding {
+    padding: 32px !important;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.infinize__advancedSearch__accordion {
+    margin-bottom: 16px;
+    border-radius: 10px !important;
+    border: 1px solid #d8e6ec;
+    background: #fbfbfd !important;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1) !important;
+}
+
+.infinize__advancedSearch__button {
+    width: 160px !important;
+    height: 48px !important;
+}
+.infinize__advancedSearch__buttons__group {
+    padding: 15px 24px;
+    background-color: #fff;
+    border: 1px solid #d8e6ec;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+}
+
+.infinize__advancedSearch__accordion {
+    background: #fbfbfd;
+}
+
+.infinize__advancedSearch__accordion::before {
+    display: none;
+}
+
+.infinize__advancedSearch__accordion.Mui-expanded {
+    margin-bottom: 16px;
+}
+
+.infinize__advancedSearch__logic_box {
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #9caeb6;
+    border-radius: 7px;
+    border: 2px solid #d8e6ec;
+}
+.infinize__advancedSearch__sectionsContainer {
+    border-radius: 6px;
+    border: 1.5px solid #d8e6ec;
+    padding: 16px;
+}
+
+.infinize__Boxborder {
+    border-bottom: 1px dotted #d8e6ec;
+}
+
+.infinize__chipStyle {
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 16px;
+}

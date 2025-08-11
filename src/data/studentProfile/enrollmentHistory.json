@@ -1,0 +1,200 @@
+[
+    {
+        "term": "202420",
+        "title": "Spring 2025",
+        "enrolledCourses": [
+            {
+                "id": 1,
+                "crn": 78901,
+                "subject": "CRJS",
+                "courseNumber": 123,
+                "title": "Introduction to Criminology",
+                "instructor": "John Mathews",
+                "courseCredits": "2",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 2,
+                "crn": 78902,
+                "subject": "CRJS",
+                "courseNumber": 125,
+                "title": "The Criminal Justice System",
+                "instructor": "Emily Carter",
+                "courseCredits": "3",
+                "schedule": ["M 10:00 AM - 11:30 AM", "W 10:00 AM - 11:30 AM"]
+            },
+            {
+                "id": 3,
+                "crn": 78903,
+                "subject": "CRJS",
+                "courseNumber": 105,
+                "title": "Corrections & Society",
+                "instructor": "Mark Robinson",
+                "courseCredits": "3",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 4,
+                "crn": 78904,
+                "subject": "CRJS",
+                "courseNumber": 287,
+                "title": "Law Enforcement & Society",
+                "instructor": "Sarah Bennett",
+                "courseCredits": "3",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 5,
+                "crn": 78905,
+                "subject": "ENGL",
+                "courseNumber": 342,
+                "title": "English Composition II",
+                "instructor": "William Johnson",
+                "courseCredits": "2",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 6,
+                "crn": 78906,
+                "subject": "SOC",
+                "courseNumber": 354,
+                "title": "Introduction to Sociology",
+                "instructor": "Lisa Anderson",
+                "courseCredits": "2",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            }
+        ]
+    },
+    {
+        "term": "202410",
+        "title": "Fall 2024",
+        "enrolledCourses": [
+            {
+                "id": 1,
+                "crn": 78901,
+                "subject": "CRJS",
+                "courseNumber": 123,
+                "title": "Introduction to Criminology",
+                "instructor": "John Mathews",
+                "courseCredits": "2",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 2,
+                "crn": 78902,
+                "subject": "CRJS",
+                "courseNumber": 125,
+                "title": "The Criminal Justice System",
+                "instructor": "Emily Carter",
+                "courseCredits": "3",
+                "schedule": ["M 10:00 AM - 11:30 AM", "W 10:00 AM - 11:30 AM"]
+            },
+            {
+                "id": 3,
+                "crn": 78903,
+                "subject": "CRJS",
+                "courseNumber": 105,
+                "title": "Corrections & Society",
+                "instructor": "Mark Robinson",
+                "courseCredits": "3",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 4,
+                "crn": 78904,
+                "subject": "CRJS",
+                "courseNumber": 287,
+                "title": "Law Enforcement & Society",
+                "instructor": "Sarah Bennett",
+                "courseCredits": "3",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 5,
+                "crn": 78905,
+                "subject": "ENGL",
+                "courseNumber": 342,
+                "title": "English Composition II",
+                "instructor": "William Johnson",
+                "courseCredits": "2",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 6,
+                "crn": 78906,
+                "subject": "SOC",
+                "courseNumber": 354,
+                "title": "Introduction to Sociology",
+                "instructor": "Lisa Anderson",
+                "courseCredits": "2",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            }
+        ]
+    },
+    {
+        "term": "202330",
+        "title": "Summer 2024",
+        "enrolledCourses": [
+            {
+                "id": 1,
+                "crn": 98901,
+                "subject": "CRJ",
+                "courseNumber": 478,
+                "title": " Introduction to Philosophy",
+                "instructor": "Kevin Brown",
+                "courseCredits": "4",
+                "schedule": "MWF 11:00 AM - 12:00 PM"
+            },
+            {
+                "id": 2,
+                "crn": 98902,
+                "subject": "CRJ",
+                "courseNumber": 182,
+                "title": "Criminological Theory",
+                "instructor": "Nancy Drew",
+                "courseCredits": "5",
+                "schedule": ["T 1:00 PM - 2:30 PM", "Th 1:00 PM - 2:30 PM"]
+            },
+            {
+                "id": 3,
+                "crn": 78903,
+                "subject": "CRJ",
+                "courseNumber": 436,
+                "title": "Capstone Research Project",
+                "instructor": "Mark Robinson",
+                "courseCredits": "3",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 4,
+                "crn": 78904,
+                "subject": "CRJ",
+                "courseNumber": 332,
+                "title": "Criminal Justice System",
+                "instructor": "Sarah Bennett",
+                "courseCredits": "3",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 5,
+                "crn": 78905,
+                "subject": "CRJ",
+                "courseNumber": 342,
+                "title": "English Composition II",
+                "instructor": "William Johnson",
+                "courseCredits": "2",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            },
+            {
+                "id": 6,
+                "crn": 78906,
+                "subject": "CRJ",
+                "courseNumber": 354,
+                "title": "Introduction to Sociology",
+                "instructor": "Lisa Anderson",
+                "courseCredits": "2",
+                "schedule": "MWF 10:00 AM - 11:30 AM"
+            }
+        ]
+    }
+]

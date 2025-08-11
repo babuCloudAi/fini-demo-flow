@@ -1,0 +1,16 @@
+{
+    "financialConstraintsOrNeeds": [
+        "Scholarships Required",
+        "Need-Based Financial Aid",
+        "Student Loans",
+        "Part-Time Job Requirement",
+        "Self-Funded",
+        "Sponsorship from Employer"
+    ],
+    "timeline": [
+        "Immediate (0-3 months)",
+        "Short-Term (3-6 months)",
+        "Medium-Term (6-12 months)",
+        "Long-Term (1+ years)"
+    ]
+}

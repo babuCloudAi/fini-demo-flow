@@ -1,0 +1,253 @@
+{
+    "id": 1,
+    "name": "CRJ",
+    "totalCredits": 43,
+    "minimumTotalCredits": 40,
+    "isOriginalAiRecommendation": true,
+    "terms": [
+        {
+            "name": "Summer 2025",
+            "code": "202430",
+            "termCredits": 6,
+            "minimumTermCredits": 4,
+            "courses": [
+                {
+                    "subject": "CRJS",
+                    "courseNumber": "203",
+                    "courseTitle": "Upper-level Law Component",
+                    "credits": 2,
+                    "description": "Examination of legal principles, case law, and judicial processes in the criminal justice system.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "10:00 AM – 11:30 AM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJS",
+                    "courseNumber": "426W",
+                    "courseTitle": "Criminological Theory",
+                    "credits": 2,
+                    "description": "Focuses on research, analysis, and professional writing skills specific to criminal justice fields",
+                    "schedule": [
+                        {
+                            "days": "M",
+                            "time": "5:00 PM – 6:30 PM"
+                        },
+                        {
+                            "days": "W",
+                            "time": "8:00 AM – 9:40 AM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJS",
+                    "courseNumber": "326",
+                    "courseTitle": "Upper-Division General Education",
+                    "credits": 2,
+                    "description": "Explores interdisciplinary perspectives on social issues, ethics, and policy impacts.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "12:00 PM – 1:30 PM"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fall 2025",
+            "code": "202510",
+            "termCredits": 12,
+            "minimumTermCredits": 10,
+            "courses": [
+                {
+                    "subject": "CRJ",
+                    "courseNumber": "478",
+                    "courseTitle": "Introduction to Philosophy",
+                    "credits": 3,
+                    "description": "Introduction to Philosophy and Ethics explore fundamental questions about existence.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "10:00 AM – 11:30 AM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJ",
+                    "courseNumber": "182",
+                    "courseTitle": "Criminological Theory",
+                    "credits": 3,
+                    "description": "An in-depth study of the major theoretical issues in criminology.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "12:00 PM – 1:30 PM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJ",
+                    "courseNumber": "436",
+                    "courseTitle": "Capstone Research Project",
+                    "credits": 3,
+                    "description": "Students work in groups to plan, design, and carry out a research project.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "3:00 PM – 4:30 PM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJ",
+                    "courseNumber": "332",
+                    "courseTitle": "Criminal Justice System",
+                    "credits": 3,
+                    "description": "The course covers both substantive and procedural law related to the definitions.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "5:00 PM – 6:30 PM"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spring 2026",
+            "code": "202520",
+            "termCredits": 12,
+            "minimumTermCredits": 6,
+            "courses": [
+                {
+                    "subject": "CRJS",
+                    "courseNumber": "321",
+                    "courseTitle": "Death Penalty",
+                    "credits": 3,
+                    "description": "Examines how technology influences society industries, ethics, and human interactions.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "8:00 AM – 9:30 AM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJ",
+                    "courseNumber": "459",
+                    "courseTitle": "Social Research Methods",
+                    "credits": 3,
+                    "description": "An overview of the scientific approach to the study of social phenomena through quantitative.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "12:00 PM – 1:30 PM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJS",
+                    "courseNumber": "30",
+                    "courseTitle": "Level Elective",
+                    "credits": 3,
+                    "description": "Explores the intersection of criminal justice and sociology,",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "2:00 PM – 3:30 PM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJ",
+                    "courseNumber": "239",
+                    "courseTitle": "Interpreting the Past",
+                    "credits": 3,
+                    "description": "Examines historical events, perspectives, and their influence on society.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "5:00 PM – 6:30 PM"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Summer 2026",
+            "code": "202530",
+            "termCredits": 13,
+            "minimumTermCredits": 8,
+            "courses": [
+                {
+                    "subject": "CRJ",
+                    "courseNumber": "398",
+                    "courseTitle": "Impact of Technology",
+                    "credits": 3,
+                    "description": "Examines legal frameworks shaping social behavior and institutional policies.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "10:00 AM – 11:30 AM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJS",
+                    "courseNumber": "406",
+                    "courseTitle": "Cyber Law",
+                    "credits": 3,
+                    "description": "Focuses on legal challenges related to cybercrime and digital security.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "12:00 PM – 1:30 PM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "SOC",
+                    "courseNumber": "320",
+                    "courseTitle": "Social Inequality",
+                    "credits": 3,
+                    "description": "Explores systemic disparities in wealth, education, and social mobility.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "2:00 PM – 3:30 PM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJS",
+                    "courseNumber": "310",
+                    "courseTitle": "Cybercriminology Foundations",
+                    "credits": 3,
+                    "description": "Introduces cybercrime trends, investigative methods, and prevention strategies.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "4:00 PM – 5:30 PM"
+                        }
+                    ]
+                },
+                {
+                    "subject": "CRJS",
+                    "courseNumber": "368",
+                    "courseTitle": "Internship in Criminal Justice",
+                    "credits": 1,
+                    "description": "Hands-on experience in criminal justice organizations and legal institutions.",
+                    "schedule": [
+                        {
+                            "days": "MWF",
+                            "time": "6:00 AM – 7:30 AM"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

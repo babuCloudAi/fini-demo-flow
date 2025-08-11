@@ -1,0 +1,46 @@
+{
+    "desiredIndustries": [
+        "Consulting",
+        "Education",
+        "Finance",
+        "Healthcare",
+        "Marketing",
+        "Manufacturing",
+        "Technology"
+    ],
+    "desiredRoles": [
+        "Consultant",
+        "Data Analyst",
+        "Financial Analyst",
+        "Forensic Analyst",
+        "HR Manager",
+        "Marketing Specialist",
+        "Product Manager",
+        "Software Engineer"
+    ],
+    "careerFocus": [
+        "Creative Industries",
+        "Entrepreneurship",
+        "Leadership and Management",
+        "Public Service",
+        "Research and Development",
+        "Technical Expertise"
+    ],
+    "salaryExpectation": [
+        "40K-60K",
+        "60K-80K",
+        "80K-100K",
+        "100K-120K",
+        "120K+"
+    ],
+    "organization": [
+        "Amazon",
+        "Google",
+        "Harvard University",
+        "JP Morgan",
+        "Large Corporation",
+        "Microsoft",
+        "Startup",
+        "Tesla"
+    ]
+}

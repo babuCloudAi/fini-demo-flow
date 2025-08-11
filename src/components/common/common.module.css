@@ -1,0 +1,482 @@
+/* -------------------------
+   Widget Base Styles
+------------------------- */
+.infinize__widget {
+    border-radius: 12px !important;
+    padding: 0 !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1) !important;
+    margin: 0px !important;
+    border: 1px solid #ebf2fd;
+    background: #fff;
+    width: 100%;
+}
+
+/* -------------------------
+   Table Styles
+------------------------- */
+
+.infinize__dataGrid {
+    background-color: #fff;
+}
+
+/* -------------------------
+   No Results UI
+------------------------- */
+.noResults {
+    padding: 0 0 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.noResults h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    padding: 10px;
+}
+
+.noResults p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.noResultsButton {
+    margin-top: 20px !important;
+    border-radius: 7px !important;
+    background-color: #1c71b5 !important;
+    box-shadow: 0px 0px 4px 0px #1c71b5;
+    color: #fff !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    padding: 10px 50px !important;
+}
+
+/* -------------------------
+   App Loader Styles
+------------------------- */
+.infinize__logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8fafe;
+    z-index: 9999;
+}
+
+.infinize__logoIcon {
+    width: 100px;
+    height: 100px;
+    animation: fadeIn 1.5s ease-out, bounce 1s infinite ease-in-out,
+        glow 2s infinite;
+}
+
+/* -------------------------
+   Loader Dialog Content
+------------------------- */
+.infinize__LoaderDialogContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 10px;
+}
+
+.infinize__LoaderInline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+/* -------------------------
+   Animations
+------------------------- */
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
+    }
+
+    50% {
+        filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.8));
+    }
+
+    100% {
+        filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
+    }
+}
+
+/* -------------------------
+   Widget Card Styles
+------------------------- */
+.infinize__widgetCard {
+    height: 100%;
+    border-radius: 12px;
+    border: 1px solid #ebf2fd;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0px !important;
+}
+
+.infinize__widgetCardContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.infinize__widgetCard .infinize__nudgeIcon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #e9eff3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infinize__widgetCard h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.infinize__widgetCard #date {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.infinize__widgetCard p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 145%;
+}
+
+.infinize__widgetCard .infinize__actionButton {
+    text-transform: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 20px !important;
+    display: flex;
+    align-items: center;
+}
+
+.infinize__widgetCardNotes {
+    width: 100%;
+}
+
+.infinize__widgetCardNotes hr {
+    height: 2px;
+    border: 0;
+    background-color: #ebf2fd;
+    margin: 0 -20px 0px !important;
+}
+
+.infinize__widgetCard h5 {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.infinize__widgetCard h5 span {
+    font-weight: 400;
+}
+
+.infinize__widgetCardEyeIconDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: 0px;
+}
+
+/* -------------------------
+   Markdown Container
+------------------------- */
+.infinize__markDownContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 27px;
+    width: 100%;
+    gap: 20px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 24px;
+}
+
+.infinize__dialogBox {
+    border-radius: 16px !important;
+}
+
+.infinize__dialogBoxHeading {
+    width: 100%;
+    display: flex !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    justify-content: space-between !important;
+    padding: 0 0 10px !important;
+}
+
+.title {
+    align-items: center;
+}
+
+.noTitle {
+    align-items: flex-start;
+}
+
+.infinize__dailogAlertIcon {
+    flex: 1.2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.infinize__dailogCloseIcon {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.infinize__dialogBoxContent {
+    width: 100%;
+    padding: 0 0 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.infinize__dialogBoxText {
+    color: #656565;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.infinize__dialogBoxActions {
+    padding: 0 !important;
+    /* align-self: flex-end !important; */
+}
+
+.infinize__dialogBoxActions button {
+    padding: 8px 40px !important;
+    text-transform: none !important;
+    border-radius: 7px !important;
+    box-shadow: 0px 0px 4px 0px #1c71b5;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+
+.infinize__confirmationDialog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.infinize__confirmationDialogHeading {
+    margin: 0;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+}
+
+.infinize__confirmationDialogText {
+    margin: 0;
+    color: #656565;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.infinize__pagination :global(.MuiPagination-ul) {
+    flex-wrap: nowrap !important;
+}
+
+.infinize__pagination :global(.MuiPaginationItem-root) {
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    color: #000;
+}
+
+.infinize__pagination :global(.MuiPaginationItem-page.Mui-selected) {
+    color: #1c71b5;
+    border: 1px solid #1c71b5;
+}
+
+.infinize__pagination :global(.MuiPaginationItem-ellipsis) {
+    border: none;
+}
+
+.infinize__pagination :global(.MuiPaginationItem-previousNext) {
+    background-color: #1c71b5;
+    color: #fff;
+}
+
+.infinize__pagination :global(.MuiPaginationItem-previousNext:hover) {
+    background-color: #1c71b5;
+}
+.infinize__pagination :global(.MuiPaginationItem-page) {
+    font-weight: 700 !important;
+}
+
+.infinize__rationaleViewerContainer {
+    width: 100%;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 0px 0px 0px 0px;
+    border: 1.5px solid #d8e6ec;
+    overflow-y: hidden;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.infinize__rationaleViewerSubContainer {
+    flex: 1;
+    overflow-y: auto;
+    margin: 10px 15px 0 0;
+    padding: 0px 24px;
+    min-height: 0;
+}
+.infinize__rationaleDisclaimerContainer {
+    padding: 10px 20px 20px;
+    flex-shrink: 0;
+}
+.infinize__rationaleDisclaimerHeading {
+    color: #5c5c5c !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding-bottom: 5px;
+}
+.infinize__rationaleDisclaimerText {
+    font-size: 12px !important;
+    font-style: italic;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+}
+
+/* baneer styles */
+.infinize__bannerContainer {
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 16px 0px rgba(16, 11, 39, 0.08);
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    position: sticky;
+    top: 64px;
+    z-index: 200;
+}
+.infinize__editModeBannerContainer {
+    top: 0;
+}
+.infinize__bannerContainer.warning {
+    border: 1px solid #f7d9a4;
+    background-color: #fff8ec;
+}
+.infinize__bannerContainer.error {
+    cursor: pointer;
+    border: 1px solid #f4b0a1;
+    background-color: #fff5f3;
+}
+.infinize__bannerContainerData {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.infinize__bannerIcon {
+    align-self: flex-start;
+    padding: 10px;
+    min-width: 30px !important;
+    max-width: 30px !important;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infinize__bannerIcon.warning {
+    background: linear-gradient(180deg, #ffc46b 0%, #ffa318 100%);
+}
+.infinize__bannerIcon.error {
+    background: linear-gradient(180deg, #e88b76 0%, #ca5048 100%);
+}
+.infinize__bannerHeading {
+    color: #27303a;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+.infinize__bannerActionIcon {
+    color: #979fa9;
+}
+.infinize__bannerActionButton {
+    text-transform: none !important;
+    border-radius: 6px !important;
+    border: 1px solid #979fa9 !important;
+    background: #fff !important;
+    padding: 10px 25px !important;
+    color: #2f3f53 !important;
+}
+
+.infinize__bannerDescription {
+    color: #333 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+.infinize__checkboxIcon {
+    font-size: 24px !important;
+    border-radius: 4px !important;
+}

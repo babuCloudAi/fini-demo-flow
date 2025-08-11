@@ -1,0 +1,120 @@
+.infinize__searchInput {
+    width: 100%;
+    padding: 20px 25px;
+    border-radius: 12px;
+    border: 1px solid #ebf2fd;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+}
+.infinize__searchIcon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infinize__searchIcon h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.infinize__searchBox {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px !important;
+    border: 1.5px solid #1c71b5;
+    border: 1.5px solid #1c71b5;
+}
+.infinize__advanceSearch {
+    color: white !important;
+    text-transform: none !important;
+    padding: 10px 25px !important;
+    font-size: 18px !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center !important;
+}
+.infinize__advancedSearchLink {
+    color: #1c71b5;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.54px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+.infinize__savedSearches {
+    border: 1.5px solid #a0abb4 !important;
+    border-radius: 8px !important;
+}
+.infinize__searchPopup {
+    padding: 15px 15px 0;
+    width: 320px;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.infinize__searchPopup h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+/* Search Results Styles */
+.infinize__searchResultBox {
+    min-height: 80vh;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.infinize__searchResultBox h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.infinize__studentName {
+    color: #000000de;
+    display: flex;
+    align-items: center;
+}
+.infinize__searchResultsIcon {
+    width: 30px;
+    height: 30px;
+    background-color: #68aadf;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infinize__dataGrid {
+    border-radius: 8px !important;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.infinize__noSearchResults {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.infinize__searchTitle {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+}
+
+.infinize__dataGrid :global(.MuiDataGrid-columnHeaderTitle) {
+    color: #fff;
+}
+
+.infinize__dataGrid :global(.MuiDataGrid-columnHeader) {
+    color: #fff;
+    background-color: #1c71b5 !important;
+}

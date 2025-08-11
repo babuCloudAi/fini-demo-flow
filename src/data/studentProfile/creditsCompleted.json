@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "semester": "Fall 2024",
+        "earned": 15,
+        "completed": 62
+    },
+    {
+        "id": 2,
+        "semester": "Summer 2024",
+        "earned": 6,
+        "completed": 47
+    },
+    {
+        "id": 3,
+        "semester": "Spring 2024",
+        "earned": 10,
+        "completed": 41
+    },
+    {
+        "id": 4,
+        "semester": "Fall 2023",
+        "earned": 10,
+        "completed": 31
+    }
+]

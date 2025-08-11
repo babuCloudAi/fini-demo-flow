@@ -1,0 +1,17 @@
+{
+    "clubs": [
+        "Academic clubs (e.g., math club, business club, debate team)",
+        "Cultural or diversity groups",
+        "Professional associations (e.g., pre-med, engineering society)",
+        "Social clubs (e.g., drama club, dance club)",
+        "Volunteering organizations (e.g., community outreach, tutoring)"
+    ],
+    "hobbiesPassions": [
+        "Cooking/Baking",
+        "Hiking/Camping",
+        "Painting/Art",
+        "Playing musical instruments",
+        "Reading books (fiction, non-fiction, research)",
+        "Traveling"
+    ]
+}

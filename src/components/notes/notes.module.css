@@ -1,0 +1,21 @@
+.infinize__notesContainer {
+    border: 1px solid #efefef;
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+.infinize__downloadIcon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background: #1c71b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -1px !important;
+}
+.infinize__attachmentInfo {
+    color: #acacac !important;
+}

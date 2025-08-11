@@ -1,0 +1,33 @@
+{
+    "strengths": [
+        "Adaptability",
+        "Good time management",
+        "Leadership ability",
+        "Problem-solving",
+        "Time Management"
+    ],
+    "challenges": [
+        "Language barriers",
+        "Math Skills",
+        "Public Speaking",
+        "Test anxiety"
+    ],
+    "financialConstraints": [
+        "Financial-Aid dependent",
+        "Limited funding for tuition",
+        "Willingness to take on part-time work"
+    ],
+    "locationConstraints": [
+        "Need to stay close to home",
+        "Off-campus",
+        "On-campus",
+        "Prefer in-person classes"
+    ],
+    "desiredGraduationTerms": [
+        "Fall 2025",
+        "Spring 2026",
+        "Summer 2026",
+        "Fall 2026",
+        "Not sure / Flexible on graduation timeline"
+    ]
+}

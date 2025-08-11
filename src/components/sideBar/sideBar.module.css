@@ -1,0 +1,21 @@
+.infinize__sideBar ul {
+    top: calc(65px + 5rem) !important;
+    transition: right 0.25s linear !important;
+}
+
+.infinize__sideBarMenuButton {
+    height: 65px !important;
+}
+
+.infinize__sideBarToggler {
+    z-index: 1300;
+    position: fixed !important;
+    top: calc(65px + 0.55rem) !important;
+    left: calc(240px - 0.7rem) !important;
+    transition: right 0.25s linear !important;
+}
+
+.infinize__sideBarToggler.closed {
+    left: 53px !important;
+    transition: right 0.25s linear !important;
+}

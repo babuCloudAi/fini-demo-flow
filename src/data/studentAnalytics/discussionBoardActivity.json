@@ -1,0 +1,46 @@
+{
+    "data": [
+        {
+            "name": "Week 1",
+            "studentPosts": 8,
+            "studentReplies": 6,
+            "courseAvgPosts": 7,
+            "courseAvgReplies": 5
+        },
+        {
+            "name": "Week 2",
+            "studentPosts": 11,
+            "studentReplies": 4,
+            "courseAvgPosts": 6,
+            "courseAvgReplies": 4
+        },
+        {
+            "name": "Week 3",
+            "studentPosts": 5,
+            "studentReplies": 7,
+            "courseAvgPosts": 6,
+            "courseAvgReplies": 6
+        },
+        {
+            "name": "Week 4",
+            "studentPosts": 9,
+            "studentReplies": 5,
+            "courseAvgPosts": 5,
+            "courseAvgReplies": 5
+        },
+        {
+            "name": "Week 5",
+            "studentPosts": 6,
+            "studentReplies": 8,
+            "courseAvgPosts": 7,
+            "courseAvgReplies": 6
+        },
+        {
+            "name": "Week 6",
+            "studentPosts": 5,
+            "studentReplies": 6,
+            "courseAvgPosts": 5,
+            "courseAvgReplies": 5
+        }
+    ]
+}

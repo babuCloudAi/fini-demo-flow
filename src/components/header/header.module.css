@@ -1,0 +1,13 @@
+.infinize__header {
+    color: #1f1f1f;
+}
+
+.infinize__menu {
+    border-radius: 16px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05) !important;
+}
+
+.infinize__menu_email {
+    color: #b0b0b0;
+    font-size: 12px;
+}

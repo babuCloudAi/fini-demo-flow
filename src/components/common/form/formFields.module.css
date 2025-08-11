@@ -1,0 +1,105 @@
+.infinize__selectlanMenuItem {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.infinize__selectlanMenuItemSelected {
+    background-color: #bbdefb;
+}
+
+.infinize__selectlanMenuItem:hover {
+    background-color: #90caf9;
+}
+
+.infinize__textArea__wordCount {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 12px !important;
+    color: #acacac !important;
+}
+
+.infinize__fileInputCard {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 16px;
+    border-radius: 6px;
+    box-shadow: none !important;
+    border-radius: 6px;
+    border: 1px solid #d8e6ec !important;
+    background: #fff !important;
+}
+
+.infinize__fileInputCardContent {
+    display: flex;
+    align-items: flex-start;
+}
+
+.infinize__fileInputFileDetails {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+.infinize__fileInputFileSize {
+    color: #989692 !important;
+    font-family: Poppins;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 20px; /* 166.667% */
+}
+
+.infinize__fileInputDropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dashed #ccc;
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+.dropzoneDisabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+    color: #7f7f7f;
+    background-color: #f5f5f5;
+}
+.infinize__fileInputUploadText {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px !important;
+}
+
+.infinize__fileInputErrorMessage {
+    color: red;
+    margin-top: 8px !important;
+    text-align: center;
+}
+
+.infinize__fileInputEditButton {
+    color: #353535;
+}
+
+.infinize__addButton {
+    padding: 6px 24px !important;
+    align-self: flex-start;
+    text-transform: none !important;
+}
+
+.infinize__filePreview {
+    font-weight: 600 !important;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1c71b5 !important;
+    font-size: 14px !important;
+    font-style: normal;
+}
+
+.infinize__fileUploadIcon {
+    border-radius: 50px;
+    background: #f5f5f5;
+}

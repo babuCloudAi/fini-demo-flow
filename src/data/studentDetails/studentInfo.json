@@ -1,0 +1,9 @@
+{
+    "name": "Jane Smith",
+    "studentId": "00345678",
+    "phone": "(789)765-472",
+    "email": "jane.s@infinize.ai",
+    "major": "Criminal Justice (BS)",
+    "level": "Undergraduate",
+    "photo": "/img/studentImage.svg"
+}

@@ -1,0 +1,382 @@
+.infinize__coursePlanCards {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 20px;
+    overflow-x: auto;
+}
+
+.infinize__coursePlanCardButtons {
+    display: flex;
+    gap: 20px;
+}
+
+.infinize__coursePlanCardButtons button {
+    height: 60px;
+    width: 200px;
+    text-transform: none !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    border-radius: 12px;
+}
+
+.infinize__coursePlanCardWithButtons {
+    width: 100%;
+    padding: 25px 0px 20px;
+    border-radius: 16px;
+    border: 1px solid #eaecf0;
+    background: var(--White, #fff);
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+        0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.infinize__coursePlanCard {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 20px;
+    scrollbar-gutter: stable;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infinize__coursePlanCardMenu {
+    align-self: flex-end;
+}
+
+.infinize__coursePlanCardMenu a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.infinize__coursePlanCard h2 {
+    padding: 10px 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.infinize__coursePlanTotalCredits {
+    padding-bottom: 30px;
+    color: #919191;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.infinize__coursePlanCardAccordion {
+    width: 100% !important;
+    background-color: #e3f2fd !important;
+    border-radius: 5px !important;
+    box-shadow: none !important;
+    padding: 0 10px !important;
+}
+
+.infinize__coursePlanCardAccordionTermName {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.infinize__coursePlanCardAccordionDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 !important;
+    gap: 10px;
+}
+
+.infinize__courseAccordion {
+    margin-bottom: 10px !important;
+    box-shadow: none !important;
+    background-color: #f2f4f5 !important;
+}
+.infinize__courseAccordionHighlighted {
+    border: 1px solid #f4b0a1 !important;
+    background-color: #fff5f3 !important;
+}
+
+.infinize__courseAccordionSummary {
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 10px;
+}
+
+.infinize__coursePlanAddCourseMenu {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.infinize__coursePlanAddCourseMenu:hover {
+    background-color: #f0f0f0;
+}
+
+.infinize__coursePlanAddButton {
+    border-radius: 4px !important;
+    background-color: #f2f4f5 !important;
+    padding: 10px !important;
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+}
+
+.infinize__coursePlanDoneButton {
+    border-radius: 7px !important;
+    border: 1.5px solid #1c71b5 !important;
+    box-shadow: 0px 0px 2px 0px rgba(28, 113, 181, 0.73);
+    padding: 10px !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    color: #1c71b5 !important;
+    margin-top: 15px !important;
+}
+
+.infinize__coursePlanCircleDelete {
+    border-radius: 4px !important;
+    border: 2px solid #5a6876 !important;
+    background: var(--Colors-Primary-White, #fff);
+}
+
+.infinize__coursePlan {
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.infinize__coursePlanPage {
+    padding: 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px !important;
+    color: #1c71b5 !important;
+    margin-top: 15px !important;
+}
+
+.infinize__coursePlanRecommendations {
+    height: 700px;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-200, #eaecf0);
+    background: var(--White, #fff);
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+        0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.infinize__recommendationsHeading {
+    padding: 20px;
+    border-bottom: 2px solid #eaecf0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.infinize__recommendationsHeading h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.infinize__recommendationsCards {
+    width: 100% !important;
+    padding: 10px 25px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.infinize__recommendationsCards ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.infinize__recommendationsCards li {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #656565;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 !important;
+}
+
+.infinize__coursePlanRecommendationsPage {
+    width: 100%;
+    margin-top: 25px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.infinize__coursePlanEditPage {
+    width: 100%;
+    padding-right: 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.infinize__coursePlanRecommendationsPage h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.infinize__coursePlanRecommendationsAlignment {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.infinize__coursePlanTermsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.infinize__coursePlanTermsContainerTotalCredits {
+    color: #333;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+.infinize__coursePlanTermsContainer .infinize__coursePlanTabButton {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+    text-transform: none !important;
+}
+
+.infinize__coursePlanPageTab {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    opacity: 1 !important;
+    min-width: 120px !important;
+}
+
+.infinize__coursePlanLandingCards {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.infinize__coursePlanLandingCard {
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px solid #ebf2fd;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.infinize__coursePlanTermHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infinize__coursePlanLandingCardTitle {
+    color: #333;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.infinize__coursePlanLandingCardDescription {
+    color: #656565;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.infinize__coursePlanTermHeadingCredits {
+    color: #656565;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.infinize__coursePlanLandingCardCredits {
+    color: #656565;
+    font-size: inherit !important;
+    font-weight: 400 !important;
+}
+
+.infinize__coursePlanCourseItem {
+    border: 2px solid #ebf2fd;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infinize__coursePlanCardRationaleLink {
+    color: #a5a5a5 !important;
+    text-decoration: underline !important;
+    text-transform: none !important;
+    font-size: 16px !important;
+}
+
+.infinize__coursePlanSchedule {
+    color: #656565;
+    font-size: inherit !important;
+    font-weight: 400 !important;
+}
+
+.infinize__coursePlanDescription {
+    font-size: 14px !important;
+    border-top: 1px solid #e0e0e0 !important;
+    padding: 0 !important;
+}
+
+.infinize__coursePlanBoldText {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.infinize__coursePlanDialogLabel {
+    color: #4a585f;
+}
+
+.infinize__coursePlanDialogSpan {
+    color: #888;
+}
+
+.infinize__coursePlanDialogInputHeading {
+    color: #231f20;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 10px !important;
+}
+
+.infinize__coursePlanDialogInputHeading.noMargin {
+    margin-bottom: 0 !important;
+}
+
+.infinize__coursePlanDialogRadio {
+    padding: 0 9px !important;
+}
+
+.infinize__coursePlanDialogControlLabel {
+    align-items: flex-start !important;
+}

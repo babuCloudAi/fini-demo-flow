@@ -1,0 +1,67 @@
+.infinize__legendRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 8px;
+}
+.infinize__legendBelow {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infinize__chartLabel {
+    font-size: 14px !important;
+    font-weight: 400;
+}
+
+.infinize__legendText {
+    color: #000;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+.infinize__chartTitle,
+.infinize__centeredChartTitle {
+    color: #1c71b5 !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+.infinize__centeredChartTitle {
+    text-align: center;
+}
+.infinize__centeredChartHeader {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.infinize__chartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.infinize__centeredContent {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.infinize__tooltipContainer {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}

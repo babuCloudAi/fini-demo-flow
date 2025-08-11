@@ -1,0 +1,25 @@
+{
+    "recommendations": {
+        "Certification": [
+            "Certified Information Systems Auditor (CISA)",
+            "Certified in Risk and Information Systems Control (CRISC)"
+        ],
+        "Soft Skills": [
+            "Critical Thinking & Decision-Making",
+            "Conflict Resolution & Mediation",
+            "Ethical Judgment & Integrity",
+            "Attention to Detail",
+            "Public Speaking & Report Writing"
+        ],
+        "Internships": [
+            "Cybersecurity or IT security ",
+            "Local government, police departments, or security firms",
+            "IT help desk or campus computer lab"
+        ],
+        "Networking & Professional Involvement": [
+            "Join Cybersecurity Associations/Groups like (ISC)², ISSA, ISACA, or InfraGard.",
+            "Try local security conferences, B-Sides events, or CTF competitions at conferences like DEF CON.",
+            "Join cybersecurity club"
+        ]
+    }
+}

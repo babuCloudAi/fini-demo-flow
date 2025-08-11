@@ -1,0 +1,83 @@
+.infinize__brandKitContainer {
+    padding: 16px 32px;
+    margin-top: 12px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.infinize__brandKitCard {
+    box-shadow: none !important;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    background: #f0f0f0;
+}
+
+.infinize__colorPickerPreview {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #e3e0e0 !important;
+    transition: transform 0.2s ease;
+}
+
+.infinize__colorPickerPreview:hover {
+    transform: scale(1.1);
+}
+
+.infinize__colorPickerButton {
+    border: 1px solid #e3e0e0 !important;
+    transition: background 0.3s ease;
+    border: 1px solid #e3e0e0;
+}
+
+.infinize__colorPickerButton:hover {
+    background: #f0f0f0;
+}
+
+.infinize__colorPickerSelected {
+    color: white;
+}
+
+.infinize__fontPickerOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 'background 0.2s ease-in-out, border 0.2s ease-in-out';
+    border: 1px solid #e3e0e0 !important;
+}
+
+.infinize__fontPickerOptionSelected {
+    background-color: #e5f4ff;
+    border: 1px solid #e5f4ff;
+}
+
+.infinize__fontPickerTextUnselected {
+    color: #333 !important;
+}
+
+.infinize__livePreview {
+    border-radius: 10px !important;
+    border: 1px solid #f0f0f0 !important;
+    background: #f0f0f0 !important;
+    box-shadow: none !important;
+}
+.infinize__livePreviewFooter {
+    padding: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.infinize__livePreviewSocialIcons {
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}

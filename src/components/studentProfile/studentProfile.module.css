@@ -1,0 +1,41 @@
+.infinize__table {
+    margin-top: 16px;
+    min-height: 300px;
+    height: 100%;
+    width: 100%;
+}
+
+.infinize__profileDataGrid {
+    border: none !important;
+    height: 100%;
+}
+
+.infinize__profileDataGrid :global(.MuiDataGrid-virtualScroller) {
+    background-color: #fff !important;
+}
+
+.infinize__profileDataGrid :global(.MuiDataGrid-columnSeparator) {
+    display: none !important;
+}
+
+.infinize__profileDataGrid :global(.MuiDataGrid-footerContainer) {
+    display: none !important;
+}
+
+.infinize__profileDataGrid :global(.MuiDataGrid-virtualScrollerContent) {
+    background-color: #fff !important;
+}
+
+.infinize__profileDataGrid :global(.MuiDataGrid-columnHeaderTitle) {
+    color: #808a98 !important;
+    padding: 0 10px !important;
+}
+.infinize__profileDataGrid :global(.MuiDataGrid-columnHeader) {
+    background-color: #f7f7f7 !important;
+}
+
+.infinize__profileDataGrid :global(.MuiDataGrid-cell) {
+    padding: 0 15px !important;
+    display: flex !important;
+    align-items: center !important;
+}
