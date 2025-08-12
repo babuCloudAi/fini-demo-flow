@@ -3,6 +3,7 @@ export const ACCEPTED_LOGO_FORMATS = {
     'image/png': ['.png'],
     'image/svg+xml': ['.svg']
 };
+
 export const ACCEPTED_RESUME_FORMATS = {'application/pdf': ['.pdf']};
 export const ACCEPTED_NOTES_FORMATS = {
     'image/jpeg': ['.jpeg', '.jpg'],
