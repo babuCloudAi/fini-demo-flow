@@ -1,10 +1,11 @@
-import {Alerts} from '@/components/dashboard/alertsAndAcoomplishments/advisorLandingPage';
+
+import { Alerts } from '@/components/dashboard';
 import {Box, Typography} from '@mui/material';
 
 export default function Students() {
     return (
         <Box component="main">
-            <Alerts />
+            <Alerts/>
         </Box>
     );
 }

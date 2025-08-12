@@ -1,10 +1,11 @@
-import {Accomplishment} from '@/components/dashboard/alertsAndAcoomplishments/advisorLandingPage';
+
+import { Accomplishments } from '@/components/dashboard';
 import {Box} from '@mui/material';
 
 export default function Students() {
     return (
         <Box component="main">
-            <Accomplishment />
+            <Accomplishments />
         </Box>
     );
 }
