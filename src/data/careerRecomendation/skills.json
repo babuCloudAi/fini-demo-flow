@@ -1,13 +1,27 @@
 {
     "type": [
-        "Analytical & Critical Thinking",
-        "Certification",
-        "Language",
-        "Policy & Procedure Development",
-        "Report Writing & Documentation",
-        "Soft Skill",
-        "Technical",
-        "Other"
+        {
+            "label": "Analytical & Critical Thinking",
+            "value": "Analytical & Critical Thinking"
+        },
+        {"label": "Certification", "value": "Certification"},
+        {"label": "Language", "value": "Language"},
+        {
+            "label": "Policy & Procedure Development",
+            "value": "Policy & Procedure Development"
+        },
+        {
+            "label": "Report Writing & Documentation",
+            "value": "Report Writing & Documentation"
+        },
+        {"label": "Soft Skill", "value": "Soft Skill"},
+        {"label": "Technical", "value": "Technical"},
+        {"label": "Other", "value": "Other"}
     ],
-    "proficiency": ["Beginner", "Intermediate", "Advanced", "Expert"]
+    "proficiency": [
+        {"label": "Beginner", "value": "Beginner"},
+        {"label": "Intermediate", "value": "Intermediate"},
+        {"label": "Advanced", "value": "Advanced"},
+        {"label": "Expert", "value": "Expert"}
+    ]
 }

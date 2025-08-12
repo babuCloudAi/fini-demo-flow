@@ -12,7 +12,6 @@ export const createApiClient = baseURL => {
     // Request interceptor
     instance.interceptors.request.use(async config => {
         const token = await getAuthToken();
-        console.log('token', token);
         if (!token) {
             return Promise.reject(new Error('Not authorized!'));
         }

@@ -1,17 +1,38 @@
 {
     "clubs": [
-        "Academic clubs (e.g., math club, business club, debate team)",
-        "Cultural or diversity groups",
-        "Professional associations (e.g., pre-med, engineering society)",
-        "Social clubs (e.g., drama club, dance club)",
-        "Volunteering organizations (e.g., community outreach, tutoring)"
+        {
+            "label": "Academic clubs (e.g., math club, business club, debate team)",
+            "value": "academic_clubs_math_business_debate_team"
+        },
+        {
+            "label": "Cultural or diversity groups",
+            "value": "cultural_or_diversity_groups"
+        },
+        {
+            "label": "Professional associations (e.g., pre-med, engineering society)",
+            "value": "professional_associations_pre_med_engineering_society"
+        },
+        {
+            "label": "Social clubs (e.g., drama club, dance club)",
+            "value": "social_clubs_drama_dance_club"
+        },
+        {
+            "label": "Volunteering organizations (e.g., community outreach, tutoring)",
+            "value": "volunteering_organizations_community_outreach_tutoring"
+        }
     ],
     "hobbiesPassions": [
-        "Cooking/Baking",
-        "Hiking/Camping",
-        "Painting/Art",
-        "Playing musical instruments",
-        "Reading books (fiction, non-fiction, research)",
-        "Traveling"
+        {"label": "Cooking/Baking", "value": "cooking_baking"},
+        {"label": "Hiking/Camping", "value": "hiking_camping"},
+        {"label": "Painting/Art", "value": "painting_art"},
+        {
+            "label": "Playing musical instruments",
+            "value": "playing_musical_instruments"
+        },
+        {
+            "label": "Reading books (fiction, non-fiction, research)",
+            "value": "reading_books_fiction_non_fiction_research"
+        },
+        {"label": "Traveling", "value": "traveling"}
     ]
 }

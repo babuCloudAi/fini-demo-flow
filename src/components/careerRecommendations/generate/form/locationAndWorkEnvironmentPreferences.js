@@ -8,6 +8,11 @@ export default function LocationAndWorkEnvironmentPreferences({
     onFormDataChange,
     locationData
 }) {
+    const yesNoOptions = [
+        {label: 'Yes', value: 'yes'},
+        {label: 'No', value: 'no'}
+    ];
+
     const LOCATION_AND_WORK_ENVIRONMENT_PREFERENCES =
         CAREER_RECOMMENDATION_SECTIONS.LOCATION_AND_WORK_ENVIRONMENT_PREFERENCES;
     const [locationPreferences, setLocationPreferences] = useState(
@@ -65,7 +70,7 @@ export default function LocationAndWorkEnvironmentPreferences({
                         name="willingnesstoRelocate"
                         label="Willingness to Relocate"
                         value={locationData?.willingnesstoRelocate}
-                        options={['Yes', 'No']}
+                        options={yesNoOptions}
                         onChange={value =>
                             handleChange('willingnesstoRelocate', value)
                         }

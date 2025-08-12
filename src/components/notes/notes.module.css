@@ -7,14 +7,13 @@
     flex-direction: column;
 }
 .infinize__downloadIcon {
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     border-radius: 50px;
     background: #1c71b5;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -1px !important;
 }
 .infinize__attachmentInfo {
     color: #acacac !important;

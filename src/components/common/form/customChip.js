@@ -1,7 +1,13 @@
 import React from 'react';
 import {Chip} from '@mui/material';
 
-export function CustomChip({label, onAction, size = 'small', actionIcon}) {
+export function CustomChip({
+    label,
+    onAction,
+    size = 'small',
+    actionIcon,
+    ...props
+}) {
     return (
         <Chip
             className="infinize__chip"
@@ -11,6 +17,7 @@ export function CustomChip({label, onAction, size = 'small', actionIcon}) {
             variant="outlined"
             deleteIcon={actionIcon}
             onMouseDown={e => e.stopPropagation()}
+            {...props}
         />
     );
 }

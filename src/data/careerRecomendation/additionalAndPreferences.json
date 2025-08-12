@@ -1,28 +1,28 @@
 {
     "softSkillsOptions": [
-        "Adaptability",
-        "Communication",
-        "Collaboration",
-        "Creativity",
-        "Leadership",
-        "Problem-Solving",
-        "Teamwork",
-        "Time Management"
+        {"label": "Adaptability", "value": "Adaptability"},
+        {"label": "Communication", "value": "Communication"},
+        {"label": "Collaboration", "value": "Collaboration"},
+        {"label": "Creativity", "value": "Creativity"},
+        {"label": "Leadership", "value": "Leadership"},
+        {"label": "Problem-Solving", "value": "Problem-Solving"},
+        {"label": "Teamwork", "value": "Teamwork"},
+        {"label": "Time Management", "value": "Time Management"}
     ],
     "hobbiesOptions": [
-        "Cooking",
-        "Gaming",
-        "Music",
-        "Painting",
-        "Photography",
-        "Traveling",
-        "Volunteering"
+        {"label": "Cooking", "value": "Cooking"},
+        {"label": "Gaming", "value": "Gaming"},
+        {"label": "Music", "value": "Music"},
+        {"label": "Painting", "value": "Painting"},
+        {"label": "Photography", "value": "Photography"},
+        {"label": "Traveling", "value": "Traveling"},
+        {"label": "Volunteering", "value": "Volunteering"}
     ],
     "teamPreferencesOptions": [
-        "Independent",
-        "Small Team",
-        "Large Team",
-        "Remote Collaboration",
-        "On-Site Teamwork"
+        {"label": "Independent", "value": "Independent"},
+        {"label": "Small Team", "value": "Small Team"},
+        {"label": "Large Team", "value": "Large Team"},
+        {"label": "Remote Collaboration", "value": "Remote Collaboration"},
+        {"label": "On-Site Teamwork", "value": "On-Site Teamwork"}
     ]
 }

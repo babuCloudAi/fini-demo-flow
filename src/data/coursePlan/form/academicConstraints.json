@@ -1,33 +1,51 @@
 {
     "strengths": [
-        "Adaptability",
-        "Good time management",
-        "Leadership ability",
-        "Problem-solving",
-        "Time Management"
+        {"label": "Adaptability", "value": "adaptability"},
+        {"label": "Good time management", "value": "good_time_management"},
+        {"label": "Leadership ability", "value": "leadership_ability"},
+        {"label": "Problem-solving", "value": "problem_solving"},
+        {"label": "Time Management", "value": "time_management"}
     ],
     "challenges": [
-        "Language barriers",
-        "Math Skills",
-        "Public Speaking",
-        "Test anxiety"
+        {"label": "Language barriers", "value": "language_barriers"},
+        {"label": "Math Skills", "value": "math_skills"},
+        {"label": "Public Speaking", "value": "public_speaking"},
+        {"label": "Test anxiety", "value": "test_anxiety"}
     ],
     "financialConstraints": [
-        "Financial-Aid dependent",
-        "Limited funding for tuition",
-        "Willingness to take on part-time work"
+        {
+            "label": "Financial-Aid dependent",
+            "value": "financial_aid_dependent"
+        },
+        {
+            "label": "Limited funding for tuition",
+            "value": "limited_funding_for_tuition"
+        },
+        {
+            "label": "Willingness to take on part-time work",
+            "value": "willingness_to_take_on_part_time_work"
+        }
     ],
     "locationConstraints": [
-        "Need to stay close to home",
-        "Off-campus",
-        "On-campus",
-        "Prefer in-person classes"
+        {
+            "label": "Need to stay close to home",
+            "value": "need_to_stay_close_to_home"
+        },
+        {"label": "Off-campus", "value": "off_campus"},
+        {"label": "On-campus", "value": "on_campus"},
+        {
+            "label": "Prefer in-person classes",
+            "value": "prefer_in_person_classes"
+        }
     ],
     "desiredGraduationTerms": [
-        "Fall 2025",
-        "Spring 2026",
-        "Summer 2026",
-        "Fall 2026",
-        "Not sure / Flexible on graduation timeline"
+        {"label": "Fall 2025", "value": "fall_2025"},
+        {"label": "Spring 2026", "value": "spring_2026"},
+        {"label": "Summer 2026", "value": "summer_2026"},
+        {"label": "Fall 2026", "value": "fall_2026"},
+        {
+            "label": "Not sure / Flexible on graduation timeline",
+            "value": "not_sure_flexible_on_graduation_timeline"
+        }
     ]
 }

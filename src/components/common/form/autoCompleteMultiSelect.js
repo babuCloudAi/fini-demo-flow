@@ -17,19 +17,22 @@ import {CustomChip} from './customChip';
 export function AutoCompleteMultiSelect({
     name,
     label,
-    options,
+    options = [],
     value = [],
     onChange,
     helperText,
-    minFilterLength
+    minFilterLength = 0
 }) {
+    // Remove an item by filtering out its value
     const handleDelete = itemToDelete => {
-        onChange(value.filter(item => item !== itemToDelete));
+        onChange(value.filter(val => val !== itemToDelete));
     };
+
+    // Get selected full option objects from selected values
+    const selectedOptions = options.filter(opt => value.includes(opt.value));
 
     return (
         <FormControl fullWidth>
-            {/* Hidden accessible label */}
             <InputLabel id={`${name}-label`} sx={visuallyHidden}>
                 {label}
             </InputLabel>
@@ -37,10 +40,15 @@ export function AutoCompleteMultiSelect({
             <Autocomplete
                 multiple
                 options={options}
-                value={value}
-                onChange={(event, newValue) => onChange(newValue)}
+                value={selectedOptions}
+                onChange={(event, newSelectedOptions) => {
+                    onChange(newSelectedOptions.map(opt => opt.value));
+                }}
                 disableCloseOnSelect
-                getOptionLabel={option => option}
+                getOptionLabel={option => option.label}
+                isOptionEqualToValue={(option, val) =>
+                    option.value === val.value
+                }
                 aria-labelledby={`${name}-label`}
                 slotProps={{
                     listbox: {
@@ -51,13 +59,13 @@ export function AutoCompleteMultiSelect({
                     const input = state.inputValue.trim().toLowerCase();
                     if (input.length < minFilterLength) return opts;
                     return opts.filter(opt =>
-                        opt.toLowerCase().includes(input)
+                        opt.label.toLowerCase().includes(input)
                     );
                 }}
                 renderOption={(props, option, {selected}) => {
                     const {key, ...rest} = props;
                     return (
-                        <ListItem key={option} {...rest} dense>
+                        <ListItem key={option.value} {...rest} dense>
                             <ListItemIcon sx={{minWidth: 32}}>
                                 <Checkbox
                                     edge="start"
@@ -65,29 +73,33 @@ export function AutoCompleteMultiSelect({
                                     disableRipple
                                 />
                             </ListItemIcon>
-                            <ListItemText primary={option} />
+                            <ListItemText primary={option.label} />
                         </ListItem>
                     );
                 }}
+                renderTags={(selected, getTagProps) =>
+                    selected.map((option, index) => {
+                        const key = option.value || index;
+                        const {key: _ignoredKey} = getTagProps({
+                            index
+                        });
+                        return (
+                            <CustomChip
+                                key={key}
+                                label={option.label}
+                                onAction={() => handleDelete(option.value)}
+                            />
+                        );
+                    })
+                }
                 renderInput={params => (
                     <TextField
                         {...params}
                         variant="outlined"
                         placeholder="Select"
                         fullWidth
-                        label="" // No visible label
+                        label=""
                     />
-                )}
-                renderValue={selected => (
-                    <Box display="flex" flexWrap="wrap" gap={0.5}>
-                        {selected.map((item, index) => (
-                            <CustomChip
-                                key={item}
-                                label={item}
-                                onAction={() => handleDelete(item)}
-                            />
-                        ))}
-                    </Box>
                 )}
             />
             {helperText && <FormHelperText>{helperText}</FormHelperText>}

@@ -19,7 +19,7 @@ export default function FileInput({
     const [errorMessage, setErrorMessage] = useState('');
     const [filePreviews, setFilePreviews] = useState([]);
     const fileInputRef = useRef(null);
-    const isMaxFilesReached = file.length === maxFiles;
+    const isMaxFilesReached = Array.isArray(file) && file.length === maxFiles;
 
     // --- Helper: Generate preview object(s) ---
     const generatePreviews = files => {

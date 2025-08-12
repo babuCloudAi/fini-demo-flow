@@ -1,46 +1,52 @@
 {
     "desiredIndustries": [
-        "Consulting",
-        "Education",
-        "Finance",
-        "Healthcare",
-        "Marketing",
-        "Manufacturing",
-        "Technology"
+        {"label": "Consulting", "value": "Consulting"},
+        {"label": "Education", "value": "Education"},
+        {"label": "Finance", "value": "Finance"},
+        {"label": "Healthcare", "value": "Healthcare"},
+        {"label": "Marketing", "value": "Marketing"},
+        {"label": "Manufacturing", "value": "Manufacturing"},
+        {"label": "Technology", "value": "Technology"}
     ],
     "desiredRoles": [
-        "Consultant",
-        "Data Analyst",
-        "Financial Analyst",
-        "Forensic Analyst",
-        "HR Manager",
-        "Marketing Specialist",
-        "Product Manager",
-        "Software Engineer"
+        {"label": "Consultant", "value": "Consultant"},
+        {"label": "Data Analyst", "value": "Data Analyst"},
+        {"label": "Financial Analyst", "value": "Financial Analyst"},
+        {"label": "Forensic Analyst", "value": "Forensic Analyst"},
+        {"label": "HR Manager", "value": "HR Manager"},
+        {"label": "Marketing Specialist", "value": "Marketing Specialist"},
+        {"label": "Product Manager", "value": "Product Manager"},
+        {"label": "Software Engineer", "value": "Software Engineer"}
     ],
     "careerFocus": [
-        "Creative Industries",
-        "Entrepreneurship",
-        "Leadership and Management",
-        "Public Service",
-        "Research and Development",
-        "Technical Expertise"
+        {"label": "Creative Industries", "value": "Creative Industries"},
+        {"label": "Entrepreneurship", "value": "Entrepreneurship"},
+        {
+            "label": "Leadership and Management",
+            "value": "Leadership and Management"
+        },
+        {"label": "Public Service", "value": "Public Service"},
+        {
+            "label": "Research and Development",
+            "value": "Research and Development"
+        },
+        {"label": "Technical Expertise", "value": "Technical Expertise"}
     ],
     "salaryExpectation": [
-        "40K-60K",
-        "60K-80K",
-        "80K-100K",
-        "100K-120K",
-        "120K+"
+        {"label": "40K-60K", "value": "40K-60K"},
+        {"label": "60K-80K", "value": "60K-80K"},
+        {"label": "80K-100K", "value": "80K-100K"},
+        {"label": "100K-120K", "value": "100K-120K"},
+        {"label": "120K+", "value": "120K+"}
     ],
     "organization": [
-        "Amazon",
-        "Google",
-        "Harvard University",
-        "JP Morgan",
-        "Large Corporation",
-        "Microsoft",
-        "Startup",
-        "Tesla"
+        {"label": "Amazon", "value": "Amazon"},
+        {"label": "Google", "value": "Google"},
+        {"label": "Harvard University", "value": "Harvard University"},
+        {"label": "JP Morgan", "value": "JP Morgan"},
+        {"label": "Large Corporation", "value": "Large Corporation"},
+        {"label": "Microsoft", "value": "Microsoft"},
+        {"label": "Startup", "value": "Startup"},
+        {"label": "Tesla", "value": "Tesla"}
     ]
 }

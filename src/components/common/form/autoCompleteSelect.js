@@ -17,10 +17,7 @@ export function AutoCompleteSelect({
     value,
     onChange,
     helperText,
-    minFilterLength = 0,
-    getOptionLabel,
-    isOptionEqualToValue,
-    customRenderOption
+    minFilterLength = 0
 }) {
     return (
         <FormControl fullWidth>
@@ -29,31 +26,28 @@ export function AutoCompleteSelect({
             </InputLabel>
             <Autocomplete
                 options={options}
-                value={value || null}
-                onChange={(event, newValue) => onChange(newValue)}
-                getOptionLabel={getOptionLabel}
+                value={options.find(opt => opt.value === value) || null}
+                onChange={(event, newValue) => {
+                    onChange(newValue ? newValue.value : null);
+                }}
+                getOptionLabel={option => option.label}
                 filterOptions={(opts, state) => {
                     const input = state.inputValue.trim().toLowerCase();
                     if (input.length < minFilterLength) {
-                        return opts; // show all if input too short
+                        return opts;
                     }
                     return opts.filter(opt =>
-                        getOptionLabel(opt)?.toLowerCase()?.includes(input)
+                        opt.label.toLowerCase().includes(input)
                     );
                 }}
-                renderOption={
-                    customRenderOption ??
-                    ((props, option) => {
-                        const {key, ...rest} = props;
-                        return (
-                            <ListItem key={key} {...rest} dense>
-                                <ListItemText
-                                    primary={getOptionLabel(option)}
-                                />
-                            </ListItem>
-                        );
-                    })
-                }
+                renderOption={(props, option) => {
+                    const {key, ...rest} = props;
+                    return (
+                        <ListItem key={option.value} {...rest} dense>
+                            <ListItemText primary={option.label} />
+                        </ListItem>
+                    );
+                }}
                 renderInput={params => (
                     <TextField
                         {...params}
@@ -64,8 +58,10 @@ export function AutoCompleteSelect({
                         aria-labelledby={`${name}-label`}
                     />
                 )}
-                isOptionEqualToValue={isOptionEqualToValue}
-                disableClearable={!value}
+                isOptionEqualToValue={(option, val) =>
+                    option.value === val.value
+                }
+                disableClearable={value === undefined || value === null}
             />
             {helperText && <FormHelperText>{helperText}</FormHelperText>}
         </FormControl>

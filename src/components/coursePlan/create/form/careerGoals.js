@@ -31,7 +31,6 @@ export default function CareerGoals({careerGoalsData, onFormDataChange}) {
             formUtils.getUpdatedFormData(careerGoalsData, field, value)
         );
     };
-
     return (
         <Box sx={{mb: 3}}>
             <Typography

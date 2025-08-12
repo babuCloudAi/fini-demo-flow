@@ -1,24 +1,24 @@
 {
     "locationPreferences": [
-        "New York",
-        "San Francisco",
-        "Los Angeles",
-        "Chicago",
-        "Austin",
-        "Seattle",
-        "Remote"
+        {"label": "New York", "value": "New York"},
+        {"label": "San Francisco", "value": "San Francisco"},
+        {"label": "Los Angeles", "value": "Los Angeles"},
+        {"label": "Chicago", "value": "Chicago"},
+        {"label": "Austin", "value": "Austin"},
+        {"label": "Seattle", "value": "Seattle"},
+        {"label": "Remote", "value": "Remote"}
     ],
     "workFormat": [
-        "On-Site",
-        "Remote",
-        "Hybrid"
+        {"label": "On-Site", "value": "On-Site"},
+        {"label": "Remote", "value": "Remote"},
+        {"label": "Hybrid", "value": "Hybrid"}
     ],
     "workHoursAvailability": [
-        "Full-time (40+ hrs)",
-        "Part-Time",
-        "Flexible Hours",
-        "Freelance/Contract",
-        "Night Shifts",
-        "Weekend Availability"
+        {"label": "Full-time (40+ hrs)", "value": "Full-time (40+ hrs)"},
+        {"label": "Part-Time", "value": "Part-Time"},
+        {"label": "Flexible Hours", "value": "Flexible Hours"},
+        {"label": "Freelance/Contract", "value": "Freelance/Contract"},
+        {"label": "Night Shifts", "value": "Night Shifts"},
+        {"label": "Weekend Availability", "value": "Weekend Availability"}
     ]
 }
