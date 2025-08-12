@@ -9,6 +9,7 @@ export default function AdminLayout({children}) {
     const pathname = usePathname();
     const router = useRouter();
 
+    
     const tabs = [
         {label: 'BrandKit', path: '/admin/brandkit'},
         {label: 'DataSources', path: '/admin/dataSources'},
