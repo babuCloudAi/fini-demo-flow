@@ -1,0 +1,147 @@
+{
+    "alerts": [
+        {
+            "student": {
+                "name": "William Smith",
+                "id": "00345678",
+                "email": "jane.s@infinize.ai",
+                "major": "Criminal Justice"
+            },
+            "alerts": [
+                {
+                    "type": "Low Attendance!",
+                    "id": "w-1",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "w-2",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "w-3",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                }
+            ]
+        },
+        {
+            "student": {
+                "name": "Michael Smith",
+                "id": "00345679",
+                "email": "jane.s@infinize.ai",
+                "major": "Criminal Justice"
+            },
+            "alerts": [
+                {
+                    "type": "Low Attendance!",
+                    "id": "m-1",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "m-2",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "m-3",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                }
+            ]
+        },
+        {
+            "student": {
+                "name": "Jane Smith",
+                "id": "00345680",
+                "email": "jane.s@infinize.ai",
+                "major": "Criminal Justice",
+                "level": "Graduate"
+            },
+            "alerts": [
+                {
+                    "type": "Low Attendance!",
+                    "id": "j-1",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "j-2",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "j-3",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                }
+            ]
+        },
+        {
+            "student": {
+                "name": "Sarah Smith",
+                "id": "00345681",
+                "email": "jane.s@infinize.ai",
+                "major": "Criminal Justice",
+                "level": "Graduate"
+            },
+            "alerts": [
+                {
+                    "type": "Low Attendance!",
+                    "id": "s-1",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "s-2",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "s-3",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                }
+            ]
+        },
+        {
+            "student": {
+                "name": "Kevin Smith",
+                "id": "00345682",
+                "email": "jane.s@infinize.ai",
+                "major": "Criminal Justice",
+                "level": "Graduate"
+            },
+            "alerts": [
+                {
+                    "type": "Low Attendance!",
+                    "id": "k-1",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "k-2",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                },
+                {
+                    "type": "Low Attendance!",
+                    "id": "k-3",
+                    "date": "03/10/2025",
+                    "message": "You've missed five classes. Regular attendance helps you stay on track. Please attend future sessions and catch up on missed work."
+                }
+            ]
+        }
+    ]
+}

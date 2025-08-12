@@ -8,11 +8,15 @@ export function InfinizeTable({
     isLoading,
     initialState,
     isRowSelectable,
-    pageSizeOptions
+    pageSizeOptions,
+    getRowId,
+    checkboxSelection = false,
+    onRowSelectionModelChange
 }) {
     return (
         <DataGrid
             className={customClassName}
+            checkboxSelection={checkboxSelection}
             rows={rows}
             columns={columns}
             disableSelectionOnClick
@@ -22,6 +26,8 @@ export function InfinizeTable({
             initialState={initialState}
             isRowSelectable={isRowSelectable}
             pageSizeOptions={pageSizeOptions}
+            getRowId={getRowId}
+            onRowSelectionModelChange={onRowSelectionModelChange}
         />
     );
 }

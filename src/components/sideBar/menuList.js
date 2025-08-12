@@ -19,13 +19,6 @@ export default function MenuList({isOpen, tabActive}) {
                 isActive={tabActive === 'admin'}
             />
             <MenuItem
-                title="My Students"
-                icon="flowbite:user-graduate-solid"
-                tabRoute="/students"
-                isOpen={isOpen}
-                isActive={tabActive === 'students'}
-            />
-            <MenuItem
                 title="Search"
                 icon="mingcute:user-search-fill"
                 tabRoute="/search"

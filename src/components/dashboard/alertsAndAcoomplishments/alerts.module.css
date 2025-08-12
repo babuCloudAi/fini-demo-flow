@@ -1,0 +1,45 @@
+.infinize__AlertsContainer {
+    border-radius: 12px;
+    border: 1px solid #ebf2fd;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+}
+.infinize__alertAccordionSummaryExpanded {
+    border-bottom: 1px solid #ebf2fd !important;
+}
+.infinize__alertAccordion {
+    border-radius: 8px !important;
+    border: 1px solid #ebf2fd !important;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.06) !important;
+    width: 100%;
+}
+.infinize__alertAccordion::before {
+    display: none !important;
+}
+.infinize__alertAccordionPrimaryText {
+    color: #333;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.infinize__alertAccordionSecondaryText {
+    color: #757575;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.infinize__headerIcon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #e9eff3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

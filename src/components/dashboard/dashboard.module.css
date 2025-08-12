@@ -1,0 +1,91 @@
+.infinize__QuickFacts {
+    padding: 24px 30px 50px;
+    border-radius: 20px;
+    border: 1px solid #f8f9fa;
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.5);
+}
+.infinize__QuickFactsPara {
+    color: #737791;
+    font-size: 16px;
+    font-weight: 400;
+}
+.infinize__QuickFactsCard {
+    height: 184px;
+    border-radius: 16px;
+    background: #d0e8fb;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.infinize__QuickFactsIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infinize__QuickFactsCardValue {
+    color: #151d48;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+}
+.infinize__QuickFactsCardTitle {
+    color: #425166;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+.infinize__AdvisorStudentsList {
+    padding: 24px 0px 80px;
+    border-radius: 20px;
+    border: 1px solid #f8f9fa;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
+}
+.infinize__studentName {
+    color: #000000de;
+    display: flex;
+    align-items: center;
+}
+.infinize__dataGrid {
+    background-color: #fff !important;
+    height: 100%;
+    width: 100%;
+}
+
+.infinize__dataGrid :global(.MuiDataGrid-columnHeaderTitle) {
+    color: #fff;
+}
+
+.infinize__dataGrid :global(.MuiDataGrid-columnHeader) {
+    color: #fff;
+    background-color: #1c71b5 !important;
+}
+
+.infinize__dataGrid
+    :global(.MuiDataGrid-columnHeaderCheckbox .MuiSvgIcon-root) {
+    color: #fff;
+}
+.infinize__dataGrid :global(.MuiDataGrid-menuIcon) {
+    color: #fff;
+}
+.infinize__dataGrid :global(.MuiSvgIcon-root) {
+    color: #fff;
+}
+.infinize__dataGrid :global(.MuiDataGrid-row.Mui-selected) {
+    background-color: transparent !important;
+}
+.infinize__dataGrid :global(.MuiDataGrid-cellCheckbox .MuiSvgIcon-root) {
+    color: #d1d1d6; /* before checked */
+}
+.infinize__dataGrid
+    :global(
+        .MuiDataGrid-cellCheckbox .MuiCheckbox-root.Mui-checked .MuiSvgIcon-root
+    ) {
+    color: #1c71b5; /* after checked */
+}
+.infinize__dataGrid :global(.MuiDataGrid-footerContainer) {
+    display: none !important;
+}

@@ -21,7 +21,12 @@ const IndeterminateIcon = ({borderColor, ...props}) => (
 
 /* ---- Re-usable component ------------------------------------------------ */
 
-export function SelectAllCheckbox({isChecked, isIndeterminate, onChange}) {
+export function SelectAllCheckbox({
+    isChecked,
+    isIndeterminate,
+    onChange,
+    label = true
+}) {
     const theme = useTheme();
     const border = theme.palette.primary.main;
 
@@ -35,9 +40,11 @@ export function SelectAllCheckbox({isChecked, isIndeterminate, onChange}) {
                 indeterminateIcon={<IndeterminateIcon borderColor={border} />}
                 className="customCheckbox"
             />
-            <Typography sx={{color: border, fontWeight: 400}}>
-                {!isIndeterminate ? 'Select All' : 'Unselect'}
-            </Typography>
+            {label && (
+                <Typography sx={{color: border, fontWeight: 400}}>
+                    {!isIndeterminate ? 'Select All' : 'Unselect'}
+                </Typography>
+            )}
         </Box>
     );
 }
