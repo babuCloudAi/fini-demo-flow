@@ -77,21 +77,21 @@ export function AutoCompleteMultiSelect({
                         </ListItem>
                     );
                 }}
-                renderTags={(selected, getTagProps) =>
-                    selected.map((option, index) => {
-                        const key = option.value || index;
-                        const {key: _ignoredKey} = getTagProps({
-                            index
-                        });
-                        return (
-                            <CustomChip
-                                key={key}
-                                label={option.label}
-                                onAction={() => handleDelete(option.value)}
-                            />
-                        );
-                    })
-                }
+                renderTags={(selected, getTagProps) => (
+                    <Box display="flex" flexWrap="wrap" gap={0.5}>
+                        {selected.map((option, index) => {
+                            const key = option.value || index;
+                            const {key: _ignoredKey} = getTagProps({index});
+                            return (
+                                <CustomChip
+                                    key={key}
+                                    label={option.label}
+                                    onAction={() => handleDelete(option.value)}
+                                />
+                            );
+                        })}
+                    </Box>
+                )}
                 renderInput={params => (
                     <TextField
                         {...params}

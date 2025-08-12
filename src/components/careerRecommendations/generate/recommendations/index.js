@@ -11,13 +11,11 @@ import {InfinizeTooltip, Loader, RationaleDialog} from '@/components/common';
 import SaveAllConfirmationDialog from './saveAllConfirmationDialog';
 import {postData} from '@/dataAccess';
 import {careerRecommendationsService} from '@/dataAccess';
-import {useParams, useRouter} from 'next/navigation';
+import {useParams} from 'next/navigation';
 
 export default function Recommendations({onRestart}) {
     const params = useParams();
     const studentId = params?.studentId;
-    const router = useRouter();
-
     const [careerList, setCareerList] = useState([]);
     const [selectedCareerIndex, setSelectedCareerIndex] = useState(null);
     const [savedCareers, setSavedCareers] = useState([]);
@@ -62,26 +60,22 @@ export default function Recommendations({onRestart}) {
 
     const handleSaveCareer = async (career, index) => {
         try {
-            sessionStorage.setItem('hasCareerRecommendations', 'true');
             // Mark this career as saving (show loader)
             setSaveInProgressCareers(prev => [...prev, index]);
 
-            // // Build custom payload
-            // const payload = {
-            //     careerPlanName: career.title,
-            //     careerPlanDescription: career.description,
-            //     rolesAndResponsibilities: career.roles,
-            //     match: career.match,
-            //     careerRecommendations: career.careerRecommendations
-            // };
+            // Build custom payload
+            const payload = {
+                careerPlanName: career.title,
+                careerPlanDescription: career.description,
+                rolesAndResponsibilities: career.roles,
+                match: career.match,
+                careerRecommendations: career.careerRecommendations
+            };
 
-            // await careerRecommendationsService.saveCareer(studentId, payload);
+            await careerRecommendationsService.saveCareer(studentId, payload);
 
             //  Mark as saved on success
-
-            setTimeout(() => {
-                setSavedCareers(prev => [...prev, index]);
-            }, 2000);
+            setSavedCareers(prev => [...prev, index]);
         } catch (error) {
             console.error('Failed to save career:', error);
         } finally {
@@ -108,10 +102,8 @@ export default function Recommendations({onRestart}) {
      * @returns {Promise<void>}
      */
     const handleSaveAllCareers = async () => {
-        sessionStorage.setItem('hasCareerRecommendations', 'true');
         toggleIsSaveAllDialog();
         toggleIsSaveAllInProgress();
-
         try {
             const {unsavedCareers, savingIndexes} = careerList.reduce(
                 (acc, career, index) => {
@@ -124,27 +116,24 @@ export default function Recommendations({onRestart}) {
                 {unsavedCareers: [], savingIndexes: []}
             );
 
-            // const payload = unsavedCareers.map(career => ({
-            //     careerPlanName: career.title,
-            //     careerPlanDescription: career.description,
-            //     rolesAndResponsibilities: career.roles,
-            //     match: career.match,
-            //     careerRecommendations: career.careerRecommendations
-            // }));
+            const payload = unsavedCareers.map(career => ({
+                careerPlanName: career.title,
+                careerPlanDescription: career.description,
+                rolesAndResponsibilities: career.roles,
+                match: career.match,
+                careerRecommendations: career.careerRecommendations
+            }));
 
-            // await careerRecommendationsService.saveAllCareers(
-            //     studentId,
-            //     payload
-            // );
+            await careerRecommendationsService.saveAllCareers(
+                studentId,
+                payload
+            );
 
             setSavedCareers(prev => [...prev, ...savingIndexes]);
         } catch (error) {
             console.error('Failed to save all careers:', error);
         } finally {
             toggleIsSaveAllInProgress();
-            setTimeout(() => {
-                router.push(`/student/${studentId}`);
-            }, 2000);
         }
     };
 
@@ -178,7 +167,7 @@ export default function Recommendations({onRestart}) {
                     </Button>
                     <Button
                         variant="contained"
-                        className="infinize__button"
+                        className="infinize__Button"
                         onClick={toggleIsSaveAllDialog}
                     >
                         Save All

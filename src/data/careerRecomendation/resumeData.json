@@ -14,15 +14,24 @@
     "skills": {
         "skills": [
             {
-                "skill": "Analytical & Critical Thinking",
+                "skill": {
+                    "label": "Analytical & Critical Thinking",
+                    "value": "Analytical & Critical Thinking"
+                },
                 "proficiencyLevel": "Advanced"
             },
             {
-                "skill": "Report Writing & Documentation",
+                "skill": {
+                    "label": "Report Writing & Documentation",
+                    "value": "Report Writing & Documentation"
+                },
                 "proficiencyLevel": "Intermediate"
             },
             {
-                "skill": "Policy & Procedure Development",
+                "skill": {
+                    "label": "Policy & Procedure Development",
+                    "value": "Policy & Procedure Development"
+                },
                 "proficiencyLevel": "Beginner"
             }
         ]
@@ -38,35 +47,16 @@
         ]
     },
     "careerGoalsAndInterests": {
-        "desiredIndustries": [
-            "Technology",
-            "Finance",
-            "Healthcare"
-        ],
-        "desiredRoles": [
-            "Forensic Analyst"
-        ],
-        "preferredOrganizationType": [
-            "Large Corporation"
-        ]
+        "desiredIndustries": ["Technology", "Finance", "Healthcare"],
+        "desiredRoles": ["Forensic Analyst"],
+        "preferredOrganizationType": ["Large Corporation"]
     },
     "locationAndWorkEnvironmentPreferences": {
-        "workFormat": [
-            "Hybrid"
-        ],
-        "workHoursAvailability": [
-            "Full-time (40+ hrs)"
-        ]
+        "workFormat": ["Hybrid"],
+        "workHoursAvailability": ["Full-time (40+ hrs)"]
     },
     "additionalAndPreferences": {
-        "softSkills": [
-            "Communication",
-            "Collaboration",
-            "Leadership"
-        ],
-        "hobbies": [
-            "Photography",
-            "Volunteering"
-        ]
+        "softSkills": ["Communication", "Collaboration", "Leadership"],
+        "hobbies": ["Photography", "Volunteering"]
     }
 }

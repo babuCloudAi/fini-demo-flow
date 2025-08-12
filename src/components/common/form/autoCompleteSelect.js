@@ -19,6 +19,40 @@ export function AutoCompleteSelect({
     helperText,
     minFilterLength = 0
 }) {
+    // Get human-readable label
+    const getLabel = option => {
+        if (!option) return '';
+        if (option.label) return option.label;
+        if (option.subject && option.courseNumber && option.courseTitle) {
+            return `${option.subject} - ${option.courseNumber} ${option.courseTitle}`;
+        }
+        if (option.subject && option.courseNumber) {
+            return `${option.subject} - ${option.courseNumber}`;
+        }
+        return String(option);
+    };
+
+    // Equality check for value selection
+    const isSameOption = (option, val) => {
+        if (!option || !val) return false;
+        if (option.value && val.value) return option.value === val.value;
+        if (option.subject && val.subject) {
+            return (
+                option.subject === val.subject &&
+                option.courseNumber === val.courseNumber
+            );
+        }
+        return false;
+    };
+
+    // Create unique key for rendering
+    const getUniqueKey = (option, index) => {
+        return (
+            option.value ||
+            `${option.subject || ''}-${option.courseNumber || ''}-${index}`
+        );
+    };
+
     return (
         <FormControl fullWidth>
             <InputLabel id={`${name}-label`} sx={visuallyHidden}>
@@ -26,25 +60,29 @@ export function AutoCompleteSelect({
             </InputLabel>
             <Autocomplete
                 options={options}
-                value={options.find(opt => opt.value === value) || null}
+                value={options.find(opt => isSameOption(opt, value)) || null}
                 onChange={(event, newValue) => {
-                    onChange(newValue ? newValue.value : null);
+                    onChange(newValue || null);
                 }}
-                getOptionLabel={option => option.label}
+                getOptionLabel={getLabel}
                 filterOptions={(opts, state) => {
                     const input = state.inputValue.trim().toLowerCase();
                     if (input.length < minFilterLength) {
                         return opts;
                     }
                     return opts.filter(opt =>
-                        opt.label.toLowerCase().includes(input)
+                        getLabel(opt).toLowerCase().includes(input)
                     );
                 }}
-                renderOption={(props, option) => {
+                renderOption={(props, option, {index}) => {
                     const {key, ...rest} = props;
                     return (
-                        <ListItem key={option.value} {...rest} dense>
-                            <ListItemText primary={option.label} />
+                        <ListItem
+                            key={getUniqueKey(option, index)}
+                            {...rest}
+                            dense
+                        >
+                            <ListItemText primary={getLabel(option)} />
                         </ListItem>
                     );
                 }}
@@ -58,9 +96,7 @@ export function AutoCompleteSelect({
                         aria-labelledby={`${name}-label`}
                     />
                 )}
-                isOptionEqualToValue={(option, val) =>
-                    option.value === val.value
-                }
+                isOptionEqualToValue={isSameOption}
                 disableClearable={value === undefined || value === null}
             />
             {helperText && <FormHelperText>{helperText}</FormHelperText>}

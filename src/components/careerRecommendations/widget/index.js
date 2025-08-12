@@ -17,19 +17,7 @@ export default function CareerRecommendations() {
     const [isOpen, setIsOpen] = useState(false);
     const [resumeFile, setResumeFile] = useState(null);
     const [isInProgress, setIsInProgress] = useState(false);
-    const [hasCareerRecommendations, setHasCareerRecommendations] = useState(
-        () => {
-            if (typeof window !== 'undefined') {
-                return (
-                    sessionStorage.getItem('hasCareerRecommendations') ===
-                    'true'
-                );
-            }
-            return false;
-        }
-    );
-    const isProfileRoute = `/student/${studentId}`;
-    const showNoPlan = !hasCareerRecommendations && isProfileRoute;
+
     const hasLoaded = useRef(false);
 
     /**
@@ -139,27 +127,34 @@ export default function CareerRecommendations() {
                 onChange={handleAccordionChange}
                 title="Career Recommendations"
                 actions={
-                    !isLoading &&
-                    (!showNoPlan ? (
-                        <Stack direction="row" gap={2}>
-                            <Button
-                                variant="outlined"
-                                onClick={handleViewAll}
-                                className="infinize__button"
-                            >
-                                View All
-                            </Button>
+                    !isLoading && careerRecommendations.length > 0 ? (
+                        careerRecommendations.length > 3 ? (
+                            <Stack direction="row" gap={2}>
+                                <Button
+                                    variant="outlined"
+                                    onClick={handleViewAll}
+                                    className="infinize__Button"
+                                >
+                                    View All
+                                </Button>
+                                <Button
+                                    variant="contained"
+                                    onClick={handleGenerateCareer}
+                                    className="infinize__Button"
+                                >
+                                    Generate
+                                </Button>
+                            </Stack>
+                        ) : (
                             <Button
                                 variant="contained"
                                 onClick={handleGenerateCareer}
-                                className="infinize__button"
+                                className="infinize__Button"
                             >
                                 Generate
                             </Button>
-                        </Stack>
-                    ) : (
-                        ''
-                    ))
+                        )
+                    ) : null
                 }
             >
                 <Box padding={2}>
@@ -170,13 +165,13 @@ export default function CareerRecommendations() {
                             height={100}
                         />
                     )}
-                    {!isLoading && !showNoPlan && (
+                    {!isLoading && careerRecommendations.length > 0 && (
                         <CareersListView
                             careers={careerRecommendations}
                             onDelete={handleDeleteCareer}
                         />
                     )}
-                    {!isLoading && showNoPlan && (
+                    {!isLoading && careerRecommendations.length == 0 && (
                         <NoResults
                             title="There are no career recommendations"
                             description="Get started by exploring career paths that align with your interests and goals"
