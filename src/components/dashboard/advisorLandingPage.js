@@ -1,7 +1,7 @@
 'use client';
 import {useEffect, useState} from 'react';
 import {Stack, Typography} from '@mui/material';
-import QuickFactsData from '@/data/advisor/QuickFacts.json';
+import QuickFactsData from '@/data/advisor/quickFacts.json';
 import StudentData from '@/data/advisor/students.json';
 import QuickFacts from './landingPage/quickFacts';
 import StudentList from './landingPage/studentList';
