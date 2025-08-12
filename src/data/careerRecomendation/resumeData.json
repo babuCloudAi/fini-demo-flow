@@ -14,24 +14,15 @@
     "skills": {
         "skills": [
             {
-                "skill": {
-                    "label": "Analytical & Critical Thinking",
-                    "value": "Analytical & Critical Thinking"
-                },
+                "skill": "Analytical & Critical Thinking",
                 "proficiencyLevel": "Advanced"
             },
             {
-                "skill": {
-                    "label": "Report Writing & Documentation",
-                    "value": "Report Writing & Documentation"
-                },
+                "skill": "Report Writing & Documentation",
                 "proficiencyLevel": "Intermediate"
             },
             {
-                "skill": {
-                    "label": "Policy & Procedure Development",
-                    "value": "Policy & Procedure Development"
-                },
+                "skill": "Policy & Procedure Development",
                 "proficiencyLevel": "Beginner"
             }
         ]

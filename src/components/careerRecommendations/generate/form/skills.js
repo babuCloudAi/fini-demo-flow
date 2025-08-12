@@ -109,9 +109,11 @@ export default function Skills({onFormDataChange, skillsData}) {
                                     onChange={value =>
                                         handleFieldChange(index, 'skill', value)
                                     }
-                                    getOptionLabel={option => option}
+                                    getOptionLabel={option =>
+                                        option?.label || ''
+                                    }
                                     isOptionEqualToValue={(option, value) =>
-                                        option === value
+                                        option?.value === value?.value
                                     }
                                 />
                             </Box>

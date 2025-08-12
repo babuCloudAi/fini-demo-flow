@@ -16,7 +16,7 @@ export default function RequiredCourses({
         // Notify the parent component
         onFilterChange(field, value);
     };
-
+    console.log(courses);
     return (
         <Box display="flex" flexDirection="column" gap={2} mt={1}>
             <Typography fontSize="16px" fontWeight="500" gutterBottom>

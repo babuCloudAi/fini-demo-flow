@@ -17,40 +17,22 @@ export function AutoCompleteSelect({
     value,
     onChange,
     helperText,
-    minFilterLength = 0
+    minFilterLength = 0,
+    getOptionLabel,
+    isOptionEqualToValue,
+    customRenderOption
 }) {
-    // Get human-readable label
-    const getLabel = option => {
+    const safeGetOptionLabel = option => {
         if (!option) return '';
-        if (option.label) return option.label;
-        if (option.subject && option.courseNumber && option.courseTitle) {
-            return `${option.subject} - ${option.courseNumber} ${option.courseTitle}`;
+        if (typeof option === 'string') return option;
+        if (typeof getOptionLabel === 'function') {
+            const label = getOptionLabel(option);
+            return label != null ? String(label) : '';
         }
-        if (option.subject && option.courseNumber) {
-            return `${option.subject} - ${option.courseNumber}`;
-        }
+        // Your case: label/value pairs
+        if (option.label) return String(option.label);
+        if (option.value) return String(option.value);
         return String(option);
-    };
-
-    // Equality check for value selection
-    const isSameOption = (option, val) => {
-        if (!option || !val) return false;
-        if (option.value && val.value) return option.value === val.value;
-        if (option.subject && val.subject) {
-            return (
-                option.subject === val.subject &&
-                option.courseNumber === val.courseNumber
-            );
-        }
-        return false;
-    };
-
-    // Create unique key for rendering
-    const getUniqueKey = (option, index) => {
-        return (
-            option.value ||
-            `${option.subject || ''}-${option.courseNumber || ''}-${index}`
-        );
     };
 
     return (
@@ -60,32 +42,32 @@ export function AutoCompleteSelect({
             </InputLabel>
             <Autocomplete
                 options={options}
-                value={options.find(opt => isSameOption(opt, value)) || null}
-                onChange={(event, newValue) => {
-                    onChange(newValue || null);
-                }}
-                getOptionLabel={getLabel}
+                value={value || null}
+                onChange={(event, newValue) => onChange(newValue)}
+                getOptionLabel={safeGetOptionLabel}
                 filterOptions={(opts, state) => {
                     const input = state.inputValue.trim().toLowerCase();
                     if (input.length < minFilterLength) {
-                        return opts;
+                        return opts; // show all if input too short
                     }
-                    return opts.filter(opt =>
-                        getLabel(opt).toLowerCase().includes(input)
-                    );
+                    return opts.filter(opt => {
+                        const label = safeGetOptionLabel(opt);
+                        return label.toLowerCase().includes(input);
+                    });
                 }}
-                renderOption={(props, option, {index}) => {
-                    const {key, ...rest} = props;
-                    return (
-                        <ListItem
-                            key={getUniqueKey(option, index)}
-                            {...rest}
-                            dense
-                        >
-                            <ListItemText primary={getLabel(option)} />
-                        </ListItem>
-                    );
-                }}
+                renderOption={
+                    customRenderOption ??
+                    ((props, option) => {
+                        const {key, ...rest} = props;
+                        return (
+                            <ListItem key={key} {...rest} dense>
+                                <ListItemText
+                                    primary={safeGetOptionLabel(option)}
+                                />
+                            </ListItem>
+                        );
+                    })
+                }
                 renderInput={params => (
                     <TextField
                         {...params}
@@ -96,8 +78,8 @@ export function AutoCompleteSelect({
                         aria-labelledby={`${name}-label`}
                     />
                 )}
-                isOptionEqualToValue={isSameOption}
-                disableClearable={value === undefined || value === null}
+                isOptionEqualToValue={isOptionEqualToValue}
+                disableClearable={!value}
             />
             {helperText && <FormHelperText>{helperText}</FormHelperText>}
         </FormControl>

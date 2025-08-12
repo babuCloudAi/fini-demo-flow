@@ -210,10 +210,11 @@ export const getFilterChips = (section, formData) => {
 
         case ADVANCED_SEARCH_SECTIONS.COURSE_REQUIREMENTS: {
             const chips = [];
-            const formatCourse = ({subject, courseNumber}) =>
-                `${subject} - ${courseNumber}`;
-
+            const formatCourse = ({SUBJECT, COURSE_NUMBER}) =>
+                `${SUBJECT} - ${COURSE_NUMBER}`;
             const requiredCourses = sectionFilters.required ?? [];
+            console.log(requiredCourses);
+
             requiredCourses.forEach((item, index) => {
                 if (item.course) {
                     chips.push({

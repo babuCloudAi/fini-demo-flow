@@ -88,9 +88,9 @@ export default function CareerGoalsAndInterests({
                         value={interestsData?.careerFocus}
                         options={careerFocus}
                         onChange={value => handleChange('careerFocus', value)}
-                        getOptionLabel={option => option}
+                        getOptionLabel={option => option?.label || ''}
                         isOptionEqualToValue={(option, value) =>
-                            option === value
+                            option?.value === value?.value
                         }
                     />
                 </Box>
